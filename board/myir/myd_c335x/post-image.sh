@@ -38,3 +38,14 @@ genimage \
     --inputpath "${BINARIES_DIR}" \
     --outputpath "${BINARIES_DIR}" \
     --config "${GENIMAGE_CFG}"
+
+echo ${BR2_CONFIG}
+
+if grep -Eq "^BR2_TARGET_UBOOT_BOARD_DEFCONFIG=\"myd_c335x_emmc\"$" ${BR2_CONFIG}; then
+    echo "generate uEnv for emmc image................."
+    cp board/myir/myd_c335x/uEnv_emmc_ramdisk.txt  $BINARIES_DIR/uEnv.txt
+else
+    echo "generate uEnv for nand image................."
+    cp board/myir/myd_c335x/uEnv_ramdisk.txt  $BINARIES_DIR/uEnv.txt
+fi
+
