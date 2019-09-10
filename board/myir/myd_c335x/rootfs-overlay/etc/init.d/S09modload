@@ -10,6 +10,11 @@ load_drivers()
 
 do_board()
 {
+    mkdir -p /root/myir
+    mkdir -p /usr/share/myir/
+    mkdir -p /home/ftp/log
+    mount -o bind /usr/share/myir /root/myir
+    chmod -R 777 /root/myir
 	load_drivers "am335x" 
 }
 

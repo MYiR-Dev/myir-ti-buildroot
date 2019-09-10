@@ -128,10 +128,11 @@ Users can update system from sd to nand or emmc automatically by setting differe
 1. Auto update from sd to nand
   - Add "optargs = updatesys_from_sd_to_nand" to the uEnv.txt in TF/SD
   - Boot from TF/SD
-
+  - Please refer to uEnv_updatesys_nand.txt
 2. Auto update from sd to emmc
   - Add "optargs = updatesys_from_sd_to_emmc" to the uEnv.txt in TF/SD
   - Boot from TF/SD
+  - Please refer to uEnv_updatesys_emmc.txt
 
 Links
 ===============
