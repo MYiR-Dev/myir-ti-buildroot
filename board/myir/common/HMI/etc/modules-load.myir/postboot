@@ -1,5 +1,11 @@
 #!/bin/sh
 
+CTOUCH=$(grep -rn 'ft*' /sys/class/input/*/name)
+if [[ $CTOUCH = *5x06_ts ]] 
+then
+	rmmod ti_am335x_tsc.ko
+fi
+
 python /usr/share/myir/www/init_boardcfg.py
 
 if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
@@ -15,9 +21,11 @@ export DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS"
 /home/myir/mxbackend &
 python /usr/share/myir/www/server.py &
 
+
 TS_CALIBRATION_FILE=/etc/pointercal
 if [ ! -f $TS_CALIBRATION_FILE ];then
         export TSLIB_TSDEVICE=/dev/input/touchscreen0
+	export QT_QPA_FB_TSLIB=1
         ts_calibrate 
 fi
 /home/myir/mxapp --platform linuxfb &
