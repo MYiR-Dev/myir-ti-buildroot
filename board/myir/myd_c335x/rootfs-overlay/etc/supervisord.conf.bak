@@ -1,0 +1,82 @@
+[inet_http_server]
+port=:9001
+username=admin
+password=admin
+
+[unix_http_server]
+file = /tmp/supervisor.sock
+
+[supervisord]
+logfile = /home/ftp/log/supervisord.log
+logfile_maxbytes = 200KB
+logfile_backups = 1
+pidfile = /tmp/supervisord.pid
+childlogdir = /home/ftp/log
+user = root
+environment = MIBS="ALL"
+
+[rpcinterface:supervisor]
+supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+
+[supervisorctl]
+serverurl = http://0.0.0.0:9001
+
+[include]
+files = /etc/supervisor.d/*.conf
+
+
+[program:emtester]
+command = /usr/bin/memtester 160M 100
+autorestart = true
+autostart = true
+startsecs = 5
+startretries = 3
+priority = 1
+user=root
+redirect_stderr = true
+stdout_logfile_maxbytes = 1MB
+stdout_logfile_backups = 2
+stdout_logfile=/home/ftp/log/memtester.log
+directory=/root/myir/
+
+[program:net0]
+command = /bin/ping 192.168.50.1 -s 6500 -i 0.1  -p5a
+autorestart = true
+autostart = true
+startsecs = 5
+startretries = 3
+priority = 2
+user=root
+redirect_stderr = true
+stdout_logfile_maxbytes = 1MB
+stdout_logfile_backups = 2
+stdout_logfile=/home/ftp/log/net0.log
+directory=/root/myir/
+
+[program:net1]
+command = /usr/bin/iperf3 -s
+autorestart = true
+autostart = true
+startsecs = 5
+startretries = 3
+priority = 2
+user=root
+redirect_stderr = true
+stdout_logfile_maxbytes = 1MB
+stdout_logfile_backups = 2
+stdout_logfile=/home/ftp/log/net1.log
+directory=/root/myir/
+
+[program:top]
+command = /usr/bin/top
+autorestart = true
+autostart = true
+startsecs = 5
+startretries = 3
+priority = 2
+user=root
+redirect_stderr = true
+stdout_logfile_maxbytes = 1MB
+stdout_logfile_backups = 2
+stdout_logfile=/home/ftp/log/top.log
+directory=/root/myir/

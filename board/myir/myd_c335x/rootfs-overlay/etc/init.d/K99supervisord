@@ -1,0 +1,32 @@
+#!/bin/sh
+
+mkdir -p /home/ftp/log/supervisor
+ulimit -s unlimited
+echo "timer" > /sys/class/leds/myc\:green\:user1/trigger
+#ulimit -n unlimited
+
+case "$1" in
+	start)
+		printf "Starting supervisord: "
+		start-stop-daemon -S -q -p /tmp/supervisord.pid --exec /usr/bin/supervisord -- -c /etc/supervisord.conf
+		echo "done"
+		;;
+	stop)
+		printf "Stopping supervisord: "
+		start-stop-daemon -K -q -p /tmp/supervisord.pid
+		echo "done"
+		;;
+	restart)
+		"$0" stop
+		sleep 5
+		"$0" start
+		;;
+	reload)
+		start-stop-daemon -K -q -p /tmp/supervisord.pid -s HUP
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart|reload}"
+		exit 1
+esac
+
+exit $?
