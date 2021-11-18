@@ -1,0 +1,1176 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6. 系统更新 · MYD-AM335X-Linux4.1.18-Development-Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sunny.Guo">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter7.html" />
+    
+    
+    <link rel="prev" href="Chapter5-3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.myir-tech.com" target="_blank" class="custom-link">MYiR Technology Ltd.</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+            
+        
+
+        
+
+        
+            
+    
+        
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Chapter1.html">
+            
+                <a href="Chapter1.html">
+            
+                    
+                    1. 软件资源介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="Chapter2.html">
+            
+                <a href="Chapter2.html">
+            
+                    
+                    2. 部署开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.3.1" data-path="Chapter2-1.html">
+            
+                <a href="Chapter2-1.html">
+            
+                    
+                    2.1 安装工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3.2" data-path="Chapter2-2.html">
+            
+                <a href="Chapter2-2.html">
+            
+                    
+                    2.2 设置交叉编译工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    3. 构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="Chapter3-1.html">
+            
+                <a href="Chapter3-1.html">
+            
+                    
+                    3.1 Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="Chapter3-2.html">
+            
+                <a href="Chapter3-2.html">
+            
+                    
+                    3.2 Linux kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.3" data-path="Chapter3-3.html">
+            
+                <a href="Chapter3-3.html">
+            
+                    
+                    3.3 构建文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="Chapter3-4.html">
+            
+                <a href="Chapter3-4.html">
+            
+                    
+                    3.4 编译QT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="Chapter4.html">
+            
+                <a href="Chapter4.html">
+            
+                    
+                    4. Linux应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="Chapter4-1.html">
+            
+                <a href="Chapter4-1.html">
+            
+                    
+                    4.1 LCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="Chapter4-2.html">
+            
+                <a href="Chapter4-2.html">
+            
+                    
+                    4.2 Touch Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="Chapter4-3.html">
+            
+                <a href="Chapter4-3.html">
+            
+                    
+                    4.3 RTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="Chapter4-4.html">
+            
+                <a href="Chapter4-4.html">
+            
+                    
+                    4.4 RS485
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="Chapter4-5.html">
+            
+                <a href="Chapter4-5.html">
+            
+                    
+                    4.5 CAN Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="Chapter4-6.html">
+            
+                <a href="Chapter4-6.html">
+            
+                    
+                    4.6 Ethernet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="Chapter4-7.html">
+            
+                <a href="Chapter4-7.html">
+            
+                    
+                    4.7 NAND Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.8" data-path="Chapter4-8.html">
+            
+                <a href="Chapter4-8.html">
+            
+                    
+                    4.8 KeyPad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.9" data-path="Chapter4-9.html">
+            
+                <a href="Chapter4-9.html">
+            
+                    
+                    4.9 GPIO-LED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.10" data-path="Chapter4-10.html">
+            
+                <a href="Chapter4-10.html">
+            
+                    
+                    4.10 Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.11" data-path="Chapter4-11.html">
+            
+                <a href="Chapter4-11.html">
+            
+                    
+                    4.11 USB Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.12" data-path="Chapter4-12.html">
+            
+                <a href="Chapter4-12.html">
+            
+                    
+                    4.12 USB Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="Chapter5.html">
+            
+                <a href="Chapter5.html">
+            
+                    
+                    5. Qt应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.6.1" data-path="Chapter5-1.html">
+            
+                <a href="Chapter5-1.html">
+            
+                    
+                    5.1 安装QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.2" data-path="Chapter5-2.html">
+            
+                <a href="Chapter5-2.html">
+            
+                    
+                    5.2 配置QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.3" data-path="Chapter5-3.html">
+            
+                <a href="Chapter5-3.html">
+            
+                    
+                    5.3 编译运行QT应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.7" data-path="Chapter6.html">
+            
+                <a href="Chapter6.html">
+            
+                    
+                    6. 系统更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="Chapter7.html">
+            
+                <a href="Chapter7.html">
+            
+                    
+                    7. 外设模块使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.8.1" data-path="Chapter7-1.html">
+            
+                <a href="Chapter7-1.html">
+            
+                    
+                    7.1 4.3寸电阻屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.2" data-path="Chapter7-2.html">
+            
+                <a href="Chapter7-2.html">
+            
+                    
+                    7.2 WIFI模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.3" data-path="Chapter7-3.html">
+            
+                <a href="Chapter7-3.html">
+            
+                    
+                    7.3 USB摄像头模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.4" data-path="Chapter7-4.html">
+            
+                <a href="Chapter7-4.html">
+            
+                    
+                    7.4 GPS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.5" data-path="Chapter7-5.html">
+            
+                <a href="Chapter7-5.html">
+            
+                    
+                    7.5 GPRS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="appendixa.html">
+            
+                <a href="appendixa.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="appendixb.html">
+            
+                <a href="appendixb.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+        
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >6. 系统更新</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="6-linux-&#x7CFB;&#x7EDF;&#x66F4;&#x65B0;">6. Linux &#x7CFB;&#x7EDF;&#x66F4;&#x65B0;</h1>
+<p>&#x2003;&#x2003;&#x672C;&#x5C0F;&#x8282;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;Linux&#x7CFB;&#x7EDF;&#x7684;tf&#x5361;&#x542F;&#x52A8;&#xFF0C;NAND Flash&#x70E7;&#x5F55;&#xFF0C;NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6302;&#x8F7D;&#x3002;</p>
+<p>&#x5149;&#x76D8;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x8BF4;&#x660E;&#xFF1A;</p>
+<div align="center"> &#x8868; 6-1 &#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x5217;&#x8868;</div>
+
+<table>
+<thead>
+<tr>
+<th>File Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MLO</td>
+<td>SPL(First Stage Bootloader),&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7531;U-boot&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td>MLO_nand</td>
+<td>SPL(First Stage Bootloader),&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;MLO</td>
+</tr>
+<tr>
+<td>MLO_sd</td>
+<td>SPL(First Stage Bootloader),&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;MLO</td>
+</tr>
+<tr>
+<td>MLO_emmc</td>
+<td>SPL(First Stage Bootloader),&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;MLO</td>
+</tr>
+<tr>
+<td>MLO_usbmsc</td>
+<td>SPL(First Stage Bootloader),&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;MLO</td>
+</tr>
+<tr>
+<td>u-boot.img</td>
+<td>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7531;U-boot&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#x751F;&#x6210;</td>
+</tr>
+<tr>
+<td>u-boot_nand.img</td>
+<td>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;u-boot.img</td>
+</tr>
+<tr>
+<td>u-boot_sd.img</td>
+<td>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;u-boot.img</td>
+</tr>
+<tr>
+<td>u-boot_emmc.img</td>
+<td>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;u-boot.img</td>
+</tr>
+<tr>
+<td>u-boot_usbmsc.img</td>
+<td>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;&#xFF0C;&#x9884;&#x7F16;&#x8BD1;&#x955C;&#x50CF;&#x4F4D;&#x4E8E;&quot;board/myir/myd_c335x/&quot;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;u-boot.img</td>
+</tr>
+<tr>
+<td>uEnv.txt</td>
+<td>U-boot &#x9ED8;&#x8BA4;&#x73AF;&#x5883;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td>uEnv_ramdisk.txt</td>
+<td>&#x4ECE;TF&#x5361;&#x542F;&#x52A8;&#x5F15;&#x5BFC;ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>uEnv_sd.txt</td>
+<td>&#x4ECE;TF&#x5361;&#x542F;&#x52A8;&#x5F15;&#x5BFC;Ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>uEnv_sd_ramdisk.txt</td>
+<td>&#x4ECE;TF&#x5361;&#x542F;&#x52A8;&#x5F15;&#x5BFC;ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>uEnv_usbmsc.txt</td>
+<td>&#x4ECE;USB Mass Storage&#x8BBE;&#x5907;&#x542F;&#x52A8;&#x5F15;&#x5BFC;Ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>uEnv_usbmsc_ramdisk.txt</td>
+<td>&#x4ECE;USB Mass Storage&#x8BBE;&#x5907;&#x542F;&#x52A8;&#x5F15;&#x5BFC;ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>uEnv_mmc.txt</td>
+<td>&#x4ECE;EMMC&#x542F;&#x52A8;&#x5F15;&#x5BFC;EXT4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x6539;&#x540D;&#x4E3A;uEnv.txt</td>
+</tr>
+<tr>
+<td>zImage</td>
+<td>&#x538B;&#x7F29;&#x5185;&#x6838;&#x955C;&#x50CF;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>myd_c335x.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;MYD-AM335X&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>myd_c335x_emmc.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;MYD-AM335X&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>myd_y335x.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;MYD-AM335X-Y&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>myd_y335x_emmc.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;MYD-AM335X-Y&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>myd_j335x.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;MYD-AM335X-J&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>myd_j335x_emmc.dtb</td>
+<td>&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;MYD-AM335X-J&#x6838;&#x5FC3;&#x677F;</td>
+</tr>
+<tr>
+<td>rootfs.tar.gz</td>
+<td>ramdisk filesystem compressed by gzip</td>
+</tr>
+<tr>
+<td>rootfs.ubi</td>
+<td>UBIFS filesystem image</td>
+</tr>
+<tr>
+<td>ramdisk.gz</td>
+<td>ramdisk filesystem compressed by gzip</td>
+</tr>
+<tr>
+<td>sdcard.img</td>
+<td>TF/SD/EMMC disk image</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2003;&#x2003;<code>uEnv*.txt</code>&#x662F;&#x6587;&#x4EF6;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;U-boot&#x542F;&#x52A8;&#x65F6;&#x7684;&#x4E00;&#x4E9B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x51B3;&#x5B9A;U-boot&#x52A0;&#x8F7D;&#x548C;&#x5F15;&#x5BFC;&#x5185;&#x6838;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4EE5;RAMDISK&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#x6240;&#x7528;&#x7684;<code>uEnv_ramdisk.txt</code>&#x4E3A;&#x4F8B;&#xFF1A;<code>fdtfile</code>&#x5B9A;&#x4E49;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x8BBE;&#x5907;&#x6811;&#x6587;&#x4EF6;&#x540D;&#x79F0;, <code>devtype</code> &#x5B9A;&#x4E49;&#x5B58;&#x653E;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x7684;&#x8BBE;&#x5907;&#x7C7B;&#x578B;, <code>devnum</code> &#x5B9A;&#x4E49;&#x5B58;&#x653E;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x7684;&#x8BBE;&#x5907;&#x5E8F;&#x53F7;(0: TF Card, 1: EMMC). <code>bootdir</code> &#x5B9A;&#x4E49;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x5728;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#xFF0C; <code>bootpart</code>&#x5B9A;&#x4E49;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x5728;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x5B58;&#x653E;&#x5206;&#x533A;(0:1 &#x8868;&#x793A;&#x8BBE;&#x5907;0&#x4E0A;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5206;&#x533A;)&#x3002;<code>uenvcmd</code> &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x811A;&#x672C;&#xFF0C;&#x7531;U-boot&#x6267;&#x884C;&#xFF0C;&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x5185;&#x6838;&#xFF0C;&#x8BBE;&#x5907;&#x6811;&#xFF0C;&#x6700;&#x540E;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x3002; </p>
+<pre><code># This uEnv.txt file can contain additional environment settings that you
+# want to set in U-Boot at boot time.  This can be simple variables such
+# as the serverip or custom variables.  The format of this file is:
+#    variable=value
+# NOTE: This file will be evaluated after the bootcmd is run and the
+#       bootcmd must be set to load this file if it exists (this is the
+#       default on all newer U-Boot images.  This also means that some
+#       variables such as bootdelay cannot be changed by this file since
+#       it is not evaluated until the bootcmd is run.
+#optargs=video=HDMI-A-1:800x600
+
+# Uncomment the following line to enable HDMI display and disable LCD display.
+fdtfile=myd_c335x.dtb
+devtype=mmc
+devnum=0
+bootdir=/
+bootpart=0:1
+uenvcmd=if run loadimage; then run loadfdt; run loadramdisk; echo Booting from mmc${mmcdev} ...; run ramargs; print bootargs; bootz ${loadaddr} ${rdaddr} ${fdtaddr}; fi;
+</code></pre><blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;
+MYD-AM335X&#x7684;&#x542F;&#x52A8;&#x5F00;&#x53D1;&#x677F;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x6CE8;&#x610F;JP8&#x8DF3;&#x7EBF;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;JP8&#x7684;1-2&#x811A;&#x65F6;&#x5C06;&#x4F1A;&#x4ECE;SD&#x5361;&#x542F;&#x52A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FDE;&#x63A5;JP8&#x7684;2-3&#x811A;&#x65F6;&#x5C06;&#x4F1A;&#x4ECE;NandFlash&#x542F;&#x52A8;&#x7CFB;&#x7EDF;&#x3002;&#x6539;&#x53D8;JP8&#x8DF3;&#x7EBF;&#x7684;&#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#x9700;&#x8981;&#x7ED9;&#x5F00;&#x53D1;&#x677F;&#x91CD;&#x65B0;&#x4E0A;&#x7535;&#x542F;&#x52A8;&#x624D;&#x80FD;&#x751F;&#x6548;&#x3002;MYD-AM335X-Y&#x7684;&#x4E3A;jp1&#xFF0C;MYD-AM335X-J&#x7684;&#x4E3A;jp6&#x3002;</strong></p>
+</blockquote>
+<p>&#x2003;&#x2003;<code>MYD-AM335X</code>&#x7CFB;&#x5217;&#x5F00;&#x53D1;&#x677F;&#x76EE;&#x524D;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x7CFB;&#x7EDF;&#x5F15;&#x5BFC;&#x52A0;&#x8F7D;&#x65B9;&#x6848;&#x3002;</p>
+<ul>
+<li>&#x65B9;&#x6848;1: TF&#x5361;&#x542F;&#x52A8;(EXT4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;).</li>
+<li>&#x65B9;&#x6848;2: TF&#x5361;&#x542F;&#x52A8;(Ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;).</li>
+<li>&#x65B9;&#x6848;3: NAND Flash&#x542F;&#x52A8;&#xFF08;ubi&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;).</li>
+<li>&#x65B9;&#x6848;4&#xFF1A;EMMC&#x542F;&#x52A8;(EXT4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;&#x6838;&#x5FC3;&#x677F;)</li>
+<li>&#x65B9;&#x6848;5: NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8C03;&#x8BD5;&#xFF09;.</li>
+</ul>
+<h2 id="tf&#x5361;&#x542F;&#x52A8;ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;">TF&#x5361;&#x542F;&#x52A8;(EXT4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;)</h2>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x70E7;&#x5199;&#x8FC7;&#x7A0B;&#x4F1A;&#x6E05;&#x9664;TF/SD&#x5361;&#x539F;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x6CE8;&#x610F;&#x5907;&#x4EFD;&#x3002;</strong></p>
+</blockquote>
+<p>&#x2003;&#x2003;Buildroot&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x751F;&#x6210;sdcard.img&#xFF0C;&#x5B83;&#x662F;&#x6574;&#x4E2A;TF&#x5361;&#x7684;&#x78C1;&#x76D8;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x5206;&#x533A;&#x4E00;&#x4E3A;FAT&#x683C;&#x5F0F;&#xFF0C;&#x5305;&#x542B;&#x4E86;MLO, u-boot.img, zImage&#x548C;&#x8BBE;&#x5907;&#x6811;&#xFF0C;uEnv.txt&#x7B49;&#x6587;&#x4EF6;;&#x5206;&#x533A;&#x4E8C;&#x4E3A;EXT4&#x683C;&#x5F0F;&#xFF0C;&#x4E3A;&#x8BE5;&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x4E0B;&#x7684;&#x6839;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;  </p>
+<p align="center"><img src="imagech/C4_1_1_win32diskimager.png" align="middle"></p>
+<p align="center"> &#x56FE;6-1  &#x4F7F;&#x7528;win32diskimager&#x70E7;&#x5199;sdcard.img </p>
+
+
+<ul>
+<li>&#x628A;TF&#x5361;&#x63D2;&#x5165;USB&#x8BFB;&#x5361;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BFB;&#x5361;&#x5668;&#x8DDF;windows&#x4E3B;&#x673A;&#x8FDE;&#x63A5;&#x3002;</li>
+<li>&#x4F7F;&#x7528;win32diskimager.exe&#x70E7;&#x5199;sdcard.img&#x5230;TF&#x5361;&#x4E0A;&#xFF0C;&#x5982;&#x56FE;6-1&#x6240;&#x793A;&#x3002;</li>
+<li>&#x70E7;&#x5199;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;TF&#x5361;&#x63D2;&#x5165;&#x5F00;&#x53D1;&#x677F;TF&#x5361;&#x69FD;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;TF&#x5361;&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#xFF0C;&#x4E0A;&#x7535;&#x5373;&#x53EF;&#x4ECE;TF&#x5361;&#x5F15;&#x5BFC;&#x542F;&#x52A8;&#xFF0C;&#x5E76;&#x52A0;&#x8F7D;&#x4F4D;&#x4E8E;TF&#x5361;&#x4E0A;&#x7684;EXT4&#x6839;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</li>
+</ul>
+<h2 id="tf&#x5361;&#x542F;&#x52A8;ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;">TF&#x5361;&#x542F;&#x52A8;(Ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;)</h2>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;HP USB Disk Storage Format Tool&#x4F1A;&#x5C06;&#x6E05;&#x9664;TF&#x5361;&#x7684;&#x5206;&#x533A;&#x3002;&#x82E5;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x5206;&#x533A;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x7535;&#x8111;&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684;&#x683C;&#x5F0F;&#x8F6F;&#x4EF6;&#x3002;</strong></p>
+</blockquote>
+<ul>
+<li>TF&#x5361;&#x683C;&#x5F0F;&#x5316;<br>(&#x8BF7;&#x4F7F;&#x7528;&#x5149;&#x76D8;&#x76EE;&#x5F55;03-Tools&#x76EE;&#x5F55;&#x4E0B;&#x7684;HP USB Disk Storage Format Tool 2.0.6&#x5DE5;&#x5177;&#x6765;&#x683C;&#x5F0F;&#x5316;TF&#x5361;&#x3002;)<br>  1.&#x628A;MMC/SD&#x5361;&#x63D2;&#x5165;USB&#x8BFB;&#x5361;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BFB;&#x5361;&#x5668;&#x8DDF;&#x7535;&#x8111;&#x8FDE;&#x63A5;
+  2.&#x6253;&#x5F00;HP USB Disk Storage Format Tool&#xFF0C;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<p align="center"><img src="imagech/6-2.png" align="middle"></p>
+<p align="center"> &#x56FE;6-2 &#x683C;&#x5F0F;&#x5316;TF&#x5361;</p>
+
+
+<pre><code>3.&#x9009;&#x62E9;&#x201C;FAT32&#x201D;&#x7CFB;&#x7EDF;&#x683C;&#x5F0F;
+4.&#x52FE;&#x9009;Quick format&#xFF08;&#x53EF;&#x9009;&#xFF09;
+5.&#x70B9;&#x51FB;&#x201C;Start&#x201D;
+6.&#x7B49;&#x5F85;&#x683C;&#x5F0F;&#x5316;&#x5B8C;&#x6210;&#xFF0C;&#x70B9;&#x51FB;&#x201C;OK&#x201D;
+</code></pre><ul>
+<li>&#x6620;&#x50CF;&#x66F4;&#x65B0;</li>
+</ul>
+<p>&#x2003;&#x2003;&#x5C06;02-Images\Linux-image&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;TF&#x5361;&#x4E0A;&#xFF0C;&#x5907;&#x4EFD;uEnv.txt&#x5E76;&#x91CD;&#x547D;&#x540D;uEnv_ramdisk.txt&#x4E3A;uEnv.txt&#xFF0C;&#x7136;&#x540E;&#x5C06;TF&#x5361;&#x63D2;&#x5165;&#x5230;&#x5F00;&#x53D1;&#x677F;&#x4E0A;&#x7684;SD&#x5361;&#x63D2;&#x69FD;&#xFF0C;&#x8FDE;&#x63A5;&#x5BF9;&#x5E94;&#x677F;&#x5B50;&#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x7684;&#x8DF3;&#x7EBF;&#x5E3D;&#x7684;1-2&#x811A;&#xFF0C;&#x4E0A;&#x7535;&#x91CD;&#x542F;&#x5F00;&#x53D1;&#x677F;&#xFF0C;&#x8F93;&#x5165;&#x8D26;&#x6237;&#x540D;<code>root</code>&#x767B;&#x5F55;&#x3002;</p>
+<h2 id="nand-flash&#x542F;&#x52A8;&#xFF08;ubi&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;nand-flash&#x7684;&#x6838;&#x5FC3;&#x677F;">NAND Flash&#x542F;&#x52A8;&#xFF08;ubi&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;NAND Flash&#x7684;&#x6838;&#x5FC3;&#x677F;)</h2>
+<p>&#x2003;&#x2003;Nand&#x542F;&#x52A8;&#x6620;&#x50CF;&#x7684;&#x66F4;&#x65B0;&#x9700;&#x8981;&#x501F;&#x52A9;&#x4E8E;u-boot&#x6765;&#x5B8C;&#x6210;&#x3002;&#x4E0D;&#x7BA1;NAND Flash&#x662F;&#x5426;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5229;&#x7528;TF&#x5361;&#x542F;&#x52A8;&#x7684;u-boot&#x5BF9;NAND Flash&#x66F4;&#x65B0;&#x6620;&#x50CF;&#x3002;</p>
+<ul>
+<li><p>&#x51C6;&#x5907;</p>
+<p>  1.&#x7528;&#x5149;&#x76D8;&#x76EE;&#x5F55;03-Tools&#x76EE;&#x5F55;&#x4E0B;&#x7684;HP USB Disk Storage Format Tool 2.0.6&#x5DE5;&#x5177;&#x5C06;TF&#x5361;&#x683C;&#x5F0F;&#x5316;&#x4E3A;FAT&#x6216;FAT32&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</p>
+<p>  2.&#x5C06;&#x5149;&#x76D8;&#x76EE;&#x5F55;02-Images\Linux-image&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6620;&#x50CF;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;TF&#x5361;&#x4E2D;</p>
+</li>
+<li>&#x66F4;&#x65B0;</li>
+</ul>
+<p>&#x2003;&#x2003;&#x5C06;&#x5E26;&#x6709;&#x7CFB;&#x7EDF;&#x6620;&#x8C61;&#x7684;TF&#x5361;&#x63D2;&#x5165;&#x5F00;&#x53D1;&#x677F;&#xFF0C;&#x8FDE;&#x63A5;&#x5BF9;&#x5E94;&#x677F;&#x5B50;&#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x7684;&#x8DF3;&#x7EBF;&#x5E3D;&#x7684;1-2&#x811A;&#xFF0C;&#x4E0A;&#x7535;&#x542F;&#x52A8;&#xFF0C;&#x5728;u-boot &#x7684;&#x63D0;&#x793A;&#x8BFB;&#x79D2;&#x5904;&#xFF0C;&#x6309;&#x4E0B;&#x952E;&#x76D8;&#x4E0A;&#x4EFB;&#x610F;&#x952E;&#x8FDB;&#x5165;u-boot&#xFF1A;</p>
+<pre><code class="lang-c">    U-Boot <span class="hljs-number">2016.05</span> (Jan <span class="hljs-number">09</span> <span class="hljs-number">2017</span> - <span class="hljs-number">19</span>:<span class="hljs-number">37</span>:<span class="hljs-number">43</span> +<span class="hljs-number">0800</span>)
+
+           Watchdog enabled
+    I2C:   ready
+    DRAM:  <span class="hljs-number">512</span> MiB
+    NAND:  <span class="hljs-number">512</span> MiB
+    MMC:   OMAP SD/MMC: <span class="hljs-number">0</span>, OMAP SD/MMC: <span class="hljs-number">1</span>
+    *** Warning - bad CRC, <span class="hljs-keyword">using</span> <span class="hljs-keyword">default</span> environment
+
+    Net:   cpsw
+    Press SPACE to <span class="hljs-built_in">abort</span> autoboot in <span class="hljs-number">2</span> seconds
+    MYIR&gt;<span class="hljs-meta">#</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FDB;&#x5165;u-boot&#x547D;&#x4EE4;&#x884C;&#x540E;&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E0A;&#x8F93;&#x5165;&#x201C;run updatesys&#x201D;&#xFF0C;&#x5F00;&#x59CB;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x3002;&#x5982;&#x679C;u-boot&#x5206;&#x533A;&#x6709;&#x8C03;&#x6574;&#xFF0C;&#x9700;&#x8981;&#x64E6;&#x9664;&#x6574;&#x4E2A;NAND Flash,&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-c">    MYIR&gt;<span class="hljs-meta"># nand erase.chip</span>
+    NAND erase.chip: device <span class="hljs-number">0</span> whole chip
+    Erasing at <span class="hljs-number">0x1ffe0000</span> -- <span class="hljs-number">100</span>% complete.
+    OK
+
+    MYIR&gt;<span class="hljs-meta"># run updatesys</span>
+    <span class="hljs-keyword">switch</span> to partitions <span class="hljs-meta">#0, OK</span>
+    mmc0 is current device
+    reading MLO
+    <span class="hljs-number">55092</span> bytes read in <span class="hljs-number">10</span> ms (<span class="hljs-number">5.3</span> MiB/s)
+
+    NAND write: device <span class="hljs-number">0</span> offset <span class="hljs-number">0x0</span>, size <span class="hljs-number">0xd734</span>
+     <span class="hljs-number">55092</span> bytes written: OK
+    reading myd_c335x.dtb
+    <span class="hljs-number">39229</span> bytes read in <span class="hljs-number">10</span> ms (<span class="hljs-number">3.7</span> MiB/s)
+
+    NAND write: device <span class="hljs-number">0</span> offset <span class="hljs-number">0x80000</span>, size <span class="hljs-number">0x993d</span>
+     <span class="hljs-number">39229</span> bytes written: OK
+    reading u-boot.img
+    <span class="hljs-number">321300</span> bytes read in <span class="hljs-number">34</span> ms (<span class="hljs-number">9</span> MiB/s)
+
+    NAND write: device <span class="hljs-number">0</span> offset <span class="hljs-number">0xc0000</span>, size <span class="hljs-number">0x4e714</span>
+     <span class="hljs-number">321300</span> bytes written: OK
+    reading zImage
+    <span class="hljs-number">4480016</span> bytes read in <span class="hljs-number">396</span> ms (<span class="hljs-number">10.8</span> MiB/s)
+
+    NAND write: device <span class="hljs-number">0</span> offset <span class="hljs-number">0x200000</span>, size <span class="hljs-number">0x445c10</span>
+     <span class="hljs-number">4480016</span> bytes written: OK
+    reading rootfs.ubi
+    <span class="hljs-number">24248320</span> bytes read in <span class="hljs-number">2111</span> ms (<span class="hljs-number">11</span> MiB/s)
+
+    NAND write: device <span class="hljs-number">0</span> offset <span class="hljs-number">0xa00000</span>, size <span class="hljs-number">0x1720000</span>
+     <span class="hljs-number">24248320</span> bytes written: OK
+    MYIR&gt;<span class="hljs-meta">#</span>
+</code></pre>
+<p>&#x2003;&#x2003;&#x7CFB;&#x7EDF;&#x66F4;&#x65B0;&#x5B8C;&#x540E;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;u-boot&#x7684;&#x547D;&#x4EE4;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x65AD;&#x7535;&#x62E8;&#x51FA;TF&#x5361;&#xFF0C;&#x8FDE;&#x63A5;&#x5BF9;&#x5E94;&#x677F;&#x5B50;&#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x7684;&#x8DF3;&#x7EBF;&#x5E3D;&#x7684;2-3&#x811A;&#xFF0C;&#x7ED9;&#x5F00;&#x53D1;&#x677F;&#x91CD;&#x65B0;&#x4E0A;&#x7535;(&#x6539;&#x53D8;&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x4E0A;&#x7535;)&#x540E;&#x5373;&#x53EF;&#x4ECE;Nand Flash&#x542F;&#x52A8;&#xFF0C;&#x8F93;&#x5165;&#x5E10;&#x6237;&#x540D;<code>root</code>&#x767B;&#x5F55;&#x3002;</p>
+<h2 id="emmc&#x542F;&#x52A8;ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;emmc&#x7684;&#x6838;&#x5FC3;&#x677F;">EMMC&#x542F;&#x52A8;(EXT4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x9009;&#x7528;&#x4E8E;&#x4F7F;&#x7528;EMMC&#x7684;&#x6838;&#x5FC3;&#x677F;)</h2>
+<p>&#x2003;&#x2003;&#x7C73;&#x5C14;AM335X&#x7CFB;&#x5217;&#x6838;&#x5FC3;&#x677F;&#x90FD;&#x652F;&#x6301;NAND Flash&#x548C;EMMC&#x4E24;&#x79CD;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#xFF0C;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6BD4;&#x8F83;&#x5927;&#x5BB9;&#x91CF;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x7684;&#x7528;&#x6237;&#x4F1A;&#x9009;&#x62E9;&#x4F7F;&#x7528;EMMC&#x7684;&#x6838;&#x5FC3;&#x677F;&#x3002;&#x76EE;&#x524D;U-boot&#x4E2D;&#x8FD8;&#x4E0D;&#x652F;&#x6301;&#x76F4;&#x63A5;&#x5199;&#x5165;&#x955C;&#x50CF;&#x5230;EMMC,&#x7528;&#x6237;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x4E8E;TF&#x5361;&#x7684;ramdisk&#x7CFB;&#x7EDF;&#x6765;&#x8FDB;&#x884C;EMMC&#x7684;&#x70E7;&#x5199;&#x548C;&#x66F4;&#x65B0;&#xFF0C;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:</p>
+<ul>
+<li><p>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</p>
+<ol>
+<li>&#x4F7F;&#x7528;HP USB Disk Storage Format Tool&#x5BF9;TF&#x5361;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;</li>
+<li>&#x5C06;MLO, MLO_emmc, u-boot.img, u-boot_emmc.img, uEnv_ramdisk.txt, uEnv_mmc.txt, zImage, myd_c335x_emmc.dtb, ramdisk.gz, rootfs.tar.gz&#x62F7;&#x8D1D;&#x5230;TF&#x5361;</li>
+<li>&#x5C06;uEnv_ramdisk.txt&#x4E2D;&#x7684;fdtfile&#x53C2;&#x6570;&#x4FEE;&#x6539;&#x4E3A;&quot;fdtfile=myd_c335x_emmc.dtb&quot;&#xFF0C;&#x7136;&#x540E;&#x6539;&#x540D;&#x4E3A;uEnv.txt</li>
+<li>&#x6309;&#x7167;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#x8FDB;&#x5165;ramdisk&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;(&#x8D26;&#x6237;&#x4E3A;root&#xFF0C;&#x5BC6;&#x7801;&#x4E3A;&#x7A7A;)</li>
+</ol>
+</li>
+<li><p>&#x6267;&#x884C;&#x5347;&#x7EA7;</p>
+<ol>
+<li>&#x6267;&#x884C;&#x547D;&#x4EE4;&quot;/etc/modules-load.myir/updatesys.sh loader2emmc sd&quot; &#x5C06;TF&#x5361;&#x4E0A;&#x7684;&#x955C;&#x50CF;&#x5199;&#x5165;&#x5230;EMMC&#x4E0A;</li>
+<li>&#x6539;&#x53D8;&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x4E3A;EMMC,&#x91CD;&#x65B0;&#x4E0A;&#x7535;&#x542F;&#x52A8;</li>
+</ol>
+</li>
+<li><p>&#x81EA;&#x52A8;&#x5347;&#x7EA7;</p>
+</li>
+</ul>
+<p>&#x2003;&#x2003;&#x81EA;&#x52A8;&#x5347;&#x7EA7;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x751F;&#x4EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4EBA;&#x5DE5;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x5347;&#x7EA7;&#xFF0C;&#x63D0;&#x9AD8;&#x751F;&#x4EA7;&#x6548;&#x7387;&#x3002;&#x7528;&#x6237;&#x53EA;&#x9700;&#x8981;&#x5728;RAMDISK&#x542F;&#x52A8;&#x7684;uEnv.txt&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;<code>optargs=updatesys_from_sd_to_emmc</code>&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5347;&#x7EA7;, &#x4FEE;&#x6539;&#x540E;&#x7684;uEnv.txt&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x3002;  </p>
+<pre><code># This uEnv.txt file can contain additional environment settings that you
+# want to set in U-Boot at boot time.  This can be simple variables such
+# as the serverip or custom variables.  The format of this file is:
+#    variable=value
+# NOTE: This file will be evaluated after the bootcmd is run and the
+#       bootcmd must be set to load this file if it exists (this is the
+#       default on all newer U-Boot images.  This also means that some
+#       variables such as bootdelay cannot be changed by this file since
+#       it is not evaluated until the bootcmd is run.
+#optargs=video=HDMI-A-1:800x600
+
+# Uncomment the following line to enable HDMI display and disable LCD display.
+fdtfile=myd_c335x_emmc.dtb
+devtype=mmc
+devnum=0
+bootdir=/
+bootpart=0:1
+optargs=updatesys_from_sd_to_emmc
+uenvcmd=if run loadimage; then run loadfdt; run loadramdisk; echo Booting from mmc${mmcdev} ...; run ramargs; print bootargs; bootz ${loadaddr} ${rdaddr} ${fdtaddr}; fi;
+</code></pre><p>optargs&#x53D8;&#x91CF;&#x5728;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;&#x5185;&#x6838;&#xFF0C;&#x8FDB;&#x5165;ramdisk&#x7CFB;&#x7EDF;&#x4E4B;&#x540E;, &#x901A;&#x8FC7;<code>/etc/init.d/S98preboot</code>&#x8C03;&#x7528;<code>/etc/modules-load.myir/preboot</code>. &#x5728;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x4E4B;&#x540E;&#x68C0;&#x6D4B;&#x5185;&#x6838;&#x542F;&#x52A8;&#x53C2;&#x6570;<code>/proc/cmdline</code>, &#x4ECE;&#x800C;&#x51B3;&#x5B9A;&#x5347;&#x7EA7;&#x7684;&#x65B9;&#x5F0F;&#x3002; </p>
+<pre><code># file: /etc/modules-load.myir/preboot
+#! /bin/sh
+if grep &quot;updatesys_from_usbmsc_to_emmc&quot; /proc/cmdline &gt; /dev/null;then
+        echo
+        echo &quot;***********************************************&quot;
+        echo &quot;*** SYSTEM UPDATE FROM USBMSC TO EMMC *********&quot;
+        echo &quot;***********************************************&quot;
+        echo
+        yes | /etc/modules-load.myir/updatesys.sh loader2emmc usbmsc
+fi
+if grep &quot;updatesys_from_sd_to_emmc&quot; /proc/cmdline &gt; /dev/null;then
+        echo
+        echo &quot;***********************************************&quot;
+        echo &quot;*** SYSTEM UPDATE FROM SDCARD TO EMMC *********&quot;
+        echo &quot;***********************************************&quot;
+        echo
+        yes | /etc/modules-load.myir/updatesys.sh loader2emmc sd
+fi
+#! /bin/sh
+if grep &quot;updatesys_from_usbmsc_to_nand&quot; /proc/cmdline &gt; /dev/null;then
+        echo
+        echo &quot;***********************************************&quot;
+        echo &quot;*** SYSTEM UPDATE FROM USBMSC TO NAND *********&quot;
+        echo &quot;***********************************************&quot;
+        echo
+        yes | /etc/modules-load.myir/updatesys.sh loader2nand usbmsc
+fi
+if grep &quot;updatesys_from_sd_to_nand&quot; /proc/cmdline &gt; /dev/null;then
+        echo
+        echo &quot;***********************************************&quot;
+        echo &quot;*** SYSTEM UPDATE FROM SDCARD TO NAND *********&quot;
+        echo &quot;***********************************************&quot;
+        echo
+        yes | /etc/modules-load.myir/updatesys.sh loader2nand sd
+fi
+</code></pre><p>&#x2003;&#x2003;&#x5347;&#x7EA7;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x6838;&#x5FC3;&#x677F;&#x4E0A;LED&#x706F;&#x4F1A;&#x6162;&#x95EA;&#xFF1B;&#x5347;&#x7EA7;&#x5931;&#x8D25;&#xFF0C;&#x6838;&#x5FC3;&#x677F;&#x4E0A;LED&#x706F;&#x4F1A;&#x5FEB;&#x95EA;&#xFF0C;&#x5177;&#x4F53;&#x884C;&#x4E3A;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<code>/etc/modules-load.myir/updatesys.sh</code>&#x5185;&#x5BB9;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x901A;&#x8FC7;<code>updatesys.sh</code>&#x5347;&#x7EA7;&#x6210;&#x529F;&#x7684;log&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>***********************************************
+*** SYSTEM UPDATE FROM SDCARD TO EMMC *********
+***********************************************
+
+All data on eMMC now will be destroyed! Continue? [y/n]
+===&gt; found sdcard /dev/mmcblk0  on  mmc0:0007
+[   18.631313] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+===&gt; found emmc /dev/mmcblk1  on  mmc1:0001
+1024+0 records in
+1024+0 records out
+DISK SIZE - 3909091328 bytes
+===&gt; Update loader to emmc...
+===&gt; Updating kernel and devicetree to emmc...
+===&gt; Update uEnv to emmc...
+===&gt; Updating filesystem to emmc...
+
+
+ Update system completed, The board can be booted from eMMC now
+</code></pre><h2 id="nfs-root&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8C03;&#x8BD5;&#xFF09;">NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8C03;&#x8BD5;&#xFF09;</h2>
+<p>&#x2003;&#x2003;Buildroot&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x751F;&#x6210;&#x7684;rootfs.tar.gz&#xFF0C;&#x53EF;&#x4EE5;&#x89E3;&#x538B;&#x4E4B;&#x540E;&#x653E;&#x5230;NFS&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4F5C;&#x4E3A;NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#xFF0C;&#x4FBF;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x8C03;&#x8BD5;&#x3002;
+&#x2003;&#x2003;&#x4F7F;&#x7528;NFS ROOT&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x914D;&#x7F6E;TFTP&#x548C;NFS&#x670D;&#x52A1;&#xFF0C;&#x4E0B;&#x9762;&#x4EE5;ubuntu&#x7CFB;&#x7EDF;&#x4E3A;&#x4F8B;&#x52A0;&#x4EE5;&#x8BF4;&#x660E;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;TFTP&#x670D;&#x52A1;&#x7AEF;</strong></p>
+<pre><code>$ sudo apt-get install tftp-hpa tftpd-hpa
+</code></pre><p><strong>&#x914D;&#x7F6E;TFTP&#x670D;&#x52A1;</strong></p>
+<p>&#x2003;&#x2003;&#x521B;&#x5EFA;TFTP&#x670D;&#x52A1;&#x5668;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;,&#x5E76;&#x6253;&#x5F00;TFTP&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;,&#x5982;&#x4E0B;:</p>
+<pre><code>$ mkdir -p &lt;WORKDIR&gt;/tftpboot
+$ chmod 777 &lt;WORKDIR&gt;/tftpboot
+$ sudo vi /etc/default/tftpd-hpa
+</code></pre><p>&#x2003;&#x2003;&#x4FEE;&#x6539;&#x6216;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<pre><code>TFTP_DIRECTORY=&quot;&lt;WORKDIR&gt;/tftpboot&quot;
+TFTP_OPTIONS=&quot;-l -c -s&quot;
+</code></pre><p><strong>&#x91CD;&#x542F;TFTP&#x670D;&#x52A1;</strong></p>
+<pre><code>$ sudo service tftpd-hpa restart
+</code></pre><p>&#x2003;&#x2003;&#x5C06;&#x51FA;&#x5382;&#x955C;&#x50CF;&#x6216;&#x8005;&#x81EA;&#x884C;&#x7F16;&#x8BD1;&#x7684;MLO, u-boot.img, zImage&#x548C;&#x8BBE;&#x5907;&#x6811;&#x6587;&#x4EF6;&#x4EE5;&#x53CA;ramdisk.gz&#x7B49;&#x62F7;&#x8D1D;&#x5230;TFTP&#x670D;&#x52A1;&#x5668;&#x7684;<code>&lt;WORKDIR&gt;/tftpboot</code>&#x76EE;&#x5F55;&#xFF0C;&#x5728;U-Boot&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;tftpboot&#x547D;&#x4EE4;&#x52A0;&#x8F7D;TFTP&#x670D;&#x52A1;&#x5668;&#x4E0A;<code>&lt;WORKDIR&gt;/tftpboot</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;,&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>&gt;# help tftpboot
+tftpboot - boot image via network using TFTP protocol
+
+Usage:
+tftpboot [loadAddress] [[hostIPaddr:]bootfilename]
+&gt;# tftpboot ${loadaddr} 192.168.1.111:zImage
+</code></pre><p><strong>&#x5B89;&#x88C5;NFS&#x670D;&#x52A1;</strong></p>
+<p>&#x2003;&#x2003;NFS&#x5373;&#x7F51;&#x7EDC;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5141;&#x8BB8;&#x4E3B;&#x673A;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6302;&#x8F7D;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;Linux&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x5C06;NFS&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x76EE;&#x5F55;&#x6302;&#x8F7D;&#x4E3A;&#x5F00;&#x53D1;&#x677F;&#x7684;&#x6839;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x4E0B;&#x9762;&#x4EE5;ubuntu&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E3A;&#x4F8B;&#xFF0C;&#x4ECB;&#x7ECD;NFS&#x670D;&#x52A1;&#x7684;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#x3002;</p>
+<pre><code>$ sudo apt-get install nfs-kernel-server
+</code></pre><p><strong>&#x914D;&#x7F6E;NFS&#x670D;&#x52A1;</strong></p>
+<p>&#x2003;&#x2003;&#x7F16;&#x8F91;/etc/exports&#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;NFS&#x670D;&#x52A1;&#x5BFC;&#x51FA;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;</p>
+<pre><code>$ sudo vi /etc/exports
+</code></pre><p>&#x2003;&#x2003;&#x6DFB;&#x52A0;NFS ROOT&#x6839;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#xFF0C;&#x4E0B;&#x9762;&#x4EE5;/home/myir/rootfs&#x4E3A;&#x4F8B;&#xFF0C;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230;/etc/exports&#x6587;&#x4EF6;&#x4E2D;, &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>/home/myir/rootfs *(rw,nohide,insecure,no_subtree_check,async,no_root_squash)
+</code></pre><p><strong>&#x91CD;&#x542F;NFS&#x670D;&#x52A1;</strong></p>
+<pre><code>$ cd /home/myir/rootfs
+$ sudo tar zxvf  &lt;WORKDIR&gt;/images/rootfs.tar.gz
+$ sudo service nfs-kernel-server restart
+</code></pre><p>&#x2003;&#x2003;&#x5728;NFS&#x670D;&#x52A1;&#x5668;&#x672C;&#x673A;&#x4E0A;&#x6D4B;&#x8BD5;NFS&#x670D;&#x52A1;&#xFF1A;</p>
+<pre><code>$ sudo mount -t nfs 127.0.0.1:/home/myir/rootfs /mnt
+</code></pre><p><strong>&#x6302;&#x8F7D;NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</strong></p>
+<p>&#x2003;&#x2003;&#x82E5;&#x672C;&#x673A;NFS&#x6302;&#x8F7D;&#x6210;&#x529F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x5F00;&#x53D1;&#x677F;&#x548C;NFS&#x670D;&#x52A1;&#x5668;&#x63A5;&#x5165;&#x5230;&#x540C;&#x4E00;&#x7F51;&#x7EDC;&#xFF0C;&#x5728;&#x5F00;&#x53D1;&#x677F;&#x4E0A;&#x6302;&#x8F7D;NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;
+&#x2003;&#x2003;&#x5148;&#x65AD;&#x7535;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x8DF3;&#x7EBF;&#x5E3D;&#x4E3A;nandflash&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;nandflash&#x4E0A;&#x5FC5;&#x987B;&#x8981;&#x5148;&#x70E7;&#x5199;uboot&#x3002;&#x62F7;&#x8D1D;zImage&#x548C;dtb&#x6587;&#x4EF6;&#x5230;<workdir>/tftpboot&#x76EE;&#x5F55;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</workdir></p>
+<pre><code>cp &lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/images/zImage &lt;WORKDIR&gt;/tftpboot
+cp &lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/images/myd_c335x.dtb &lt;WORKDIR&gt;/tftpboot
+</code></pre><p>&#x2003;&#x2003;&#x89E3;&#x538B;rootfs.tar.gz&#x5230;/home/myir/rootfs&#x76EE;&#x5F55;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>cd /home/myir/rootfs
+sudo tar -xvf &lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/images/rootfs.tar.gz ./
+</code></pre><p>&#x2003;&#x2003;&#x4F8B;&#x5982;&#xFF0C;NFS&#x670D;&#x52A1;&#x5668;IP&#x4E3A;192.168.1.111.&#x5728;U-boot&#x4E2D;&#x8BBE;&#x7F6E;&#x5F00;&#x53D1;&#x677F;IP&#x4E3A;192.168.1.112, &#x5982;&#x4E0B;:</p>
+<pre><code>&gt;# setenv ipaddr 192.168.1.112
+&gt;# setenv serverip 192.168.1.111
+</code></pre><p>&#x2003;&#x2003;&#x5728;U-boot&#x4E2D;&#x4F7F;&#x7528;ping&#x547D;&#x4EE4;&#x6D4B;&#x8BD5;&#x5F00;&#x53D1;&#x677F;&#x4E0E;NFS&#x670D;&#x52A1;&#x5668;&#x662F;&#x5426;&#x8FDE;&#x901A;:</p>
+<pre><code># ping 192.168.1.111
+</code></pre><p>&#x2003;&#x2003;&#x8BBE;&#x7F6E;&#x5F00;&#x53D1;&#x677F;nfs&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x548C;&#x8BBE;&#x5907;&#x6811;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&gt;# setenv rootpath /home/myir/rootfs   -- &#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x5F0F;&#x524D;&#x5C06;rootfs.tar.gz&#x89E3;&#x538B;&#x5230;&#x8BE5;nfs&#x76EE;&#x5F55;
+&gt;# setenv fdtfile myd_c335x.dtb        -- &#x8FD9;&#x91CC;&#x4EE5;MYD-AM335X&#x677F;&#x4E3A;&#x4F8B;&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x677F;&#x578B;&#x8981;&#x7528;&#x5BF9;&#x5E94;&#x7684;dtb&#x6587;&#x4EF6;
+&gt;# echo $fdtfile                       -- &#x67E5;&#x770B;fdtfile&#x540D;&#x79F0;&#x662F;&#x5426;&#x6B63;&#x786E;
+</code></pre><p>&#x2003;&#x2003;&#x4FDD;&#x5B58;&#x76F8;&#x5173;&#x73AF;&#x5883;&#x53D8;&#x91CF;.&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&gt;# saveenv
+</code></pre><p>&#x2003;&#x2003;U-Boot&#x63A7;&#x5236;&#x53F0;&#x4E0B;&#x6267;&#x884C;netboot&#x547D;&#x4EE4;&#xFF0C;&#x542F;&#x52A8;&#x6302;&#x8F7D;&#x7684;NFS ROOT&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5982;&#x4E0B;:</p>
+<pre><code>&gt;# run netboot
+</code></pre><p>&#x2003;&#x2003;&#x5982;&#x679C;ping serverip&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x8FD0;&#x884C;run netboot&#x65F6;tftp&#x5931;&#x8D25;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;server&#x7AEF;tftp service&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ tftp 192.168.1.111
+tftp&gt; get myd_c335x.dtb
+tftp&gt; quit                                  -- &#x9000;&#x51FA;tftp
+</code></pre><p>&#x2003;&#x2003;&#x5982;&#x679C;&#x5931;&#x8D25;&#xFF0C;&#x91CD;&#x542F;tftp service&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ sudo service tftpd-hpa restart
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter5-3.html" class="navigation navigation-prev " aria-label="Previous page: 5.3 编译运行QT应用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter7.html" class="navigation navigation-next " aria-label="Next page: 7. 外设模块使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. 系统更新","level":"1.7","depth":1,"next":{"title":"7. 外设模块使用","level":"1.8","depth":1,"path":"Chapter7.md","ref":"Chapter7.md","articles":[{"title":"7.1 4.3寸电阻屏","level":"1.8.1","depth":2,"path":"Chapter7-1.md","ref":"Chapter7-1.md","articles":[]},{"title":"7.2 WIFI模块","level":"1.8.2","depth":2,"path":"Chapter7-2.md","ref":"Chapter7-2.md","articles":[]},{"title":"7.3 USB摄像头模块","level":"1.8.3","depth":2,"path":"Chapter7-3.md","ref":"Chapter7-3.md","articles":[]},{"title":"7.4 GPS模块","level":"1.8.4","depth":2,"path":"Chapter7-4.md","ref":"Chapter7-4.md","articles":[]},{"title":"7.5 GPRS模块","level":"1.8.5","depth":2,"path":"Chapter7-5.md","ref":"Chapter7-5.md","articles":[]}]},"previous":{"title":"5.3 编译运行QT应用","level":"1.6.3","depth":2,"path":"Chapter5-3.md","ref":"Chapter5-3.md","articles":[]},"dir":"ltr"},"config":{"tbfed-pagefooter":{"copyright":"Copyright@MYIR Tech Limited 2011-2017 all rights reserved.","modify_label":"���ļ��޶�ʱ�䣺","modify_format":"YYYY-MM-DD HH:mm:ss"},"plugins":["theme-pdftoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-pdftoc":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Sunny.Guo","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MYD-AM335X-Linux4.1.18-Development-Guide","language":"zh-hans","links":{"sidebar":{"MYiR Technology Ltd.":"http://www.myir-tech.com"}},"gitbook":"3.x.x"},"file":{"path":"Chapter6.md","mtime":"2018-08-08T02:18:03.943Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-18T09:48:11.973Z"},"basePath":".","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

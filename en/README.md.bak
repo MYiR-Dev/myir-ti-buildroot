@@ -1,0 +1,24 @@
+# MYD-AM335X-Linux-4.1.18 Development Guide
+#Introduction
+This section provides an overview of the areas covered by the documentation,what is contained, the appropriate readers, the documentation version history, and the applicable hardware version.
+
+
+This chapter describes how to run Linux system and embedded Linux applications and the process of drive development in MYD-AM335X series development board. It includes building the development environment, compiling the source code, examples of Linux application and image download.
+
+This document is suitable for embedded Linux development engineers with some development experience.
+
+##Version History
+
+|Version Number | Description | Time|
+|---- | ---- | ----|
+| V1.0  | Initial Version | 2017.4.1 |
+| V1.1  | 1. Add kernel and u-boot repository configuration for Buildroot<br>2. Add MEasy HMI demo to rootfs for development boards  | 2018.07.01 |
+| V1.2  | 1. Add support of core board with EMMC  | 2018.07.26 |
+| V1.3  | Add chapters for MYIR peripheral module usage| 2018.08.28 |
+
+
+##Hardware Version
+
+ MYD-AM335X, MYD-AM335X-Y,MYD-AM335X-J.
+
+> **Note: This document applies to the above three versions of the hardware, the user can choose the corresponding operation according to the corresponding board.In this paper, the MYD-AM335X series is used to represent the three board.**

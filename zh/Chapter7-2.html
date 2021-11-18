@@ -1,0 +1,993 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.2 WIFI模块 · MYD-AM335X-Linux4.1.18-Development-Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sunny.Guo">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter7-3.html" />
+    
+    
+    <link rel="prev" href="Chapter7-1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.myir-tech.com" target="_blank" class="custom-link">MYiR Technology Ltd.</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+            
+        
+
+        
+
+        
+            
+    
+        
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Chapter1.html">
+            
+                <a href="Chapter1.html">
+            
+                    
+                    1. 软件资源介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="Chapter2.html">
+            
+                <a href="Chapter2.html">
+            
+                    
+                    2. 部署开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.3.1" data-path="Chapter2-1.html">
+            
+                <a href="Chapter2-1.html">
+            
+                    
+                    2.1 安装工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3.2" data-path="Chapter2-2.html">
+            
+                <a href="Chapter2-2.html">
+            
+                    
+                    2.2 设置交叉编译工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    3. 构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="Chapter3-1.html">
+            
+                <a href="Chapter3-1.html">
+            
+                    
+                    3.1 Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="Chapter3-2.html">
+            
+                <a href="Chapter3-2.html">
+            
+                    
+                    3.2 Linux kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.3" data-path="Chapter3-3.html">
+            
+                <a href="Chapter3-3.html">
+            
+                    
+                    3.3 构建文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="Chapter3-4.html">
+            
+                <a href="Chapter3-4.html">
+            
+                    
+                    3.4 编译QT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="Chapter4.html">
+            
+                <a href="Chapter4.html">
+            
+                    
+                    4. Linux应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="Chapter4-1.html">
+            
+                <a href="Chapter4-1.html">
+            
+                    
+                    4.1 LCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="Chapter4-2.html">
+            
+                <a href="Chapter4-2.html">
+            
+                    
+                    4.2 Touch Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="Chapter4-3.html">
+            
+                <a href="Chapter4-3.html">
+            
+                    
+                    4.3 RTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="Chapter4-4.html">
+            
+                <a href="Chapter4-4.html">
+            
+                    
+                    4.4 RS485
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="Chapter4-5.html">
+            
+                <a href="Chapter4-5.html">
+            
+                    
+                    4.5 CAN Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="Chapter4-6.html">
+            
+                <a href="Chapter4-6.html">
+            
+                    
+                    4.6 Ethernet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="Chapter4-7.html">
+            
+                <a href="Chapter4-7.html">
+            
+                    
+                    4.7 NAND Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.8" data-path="Chapter4-8.html">
+            
+                <a href="Chapter4-8.html">
+            
+                    
+                    4.8 KeyPad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.9" data-path="Chapter4-9.html">
+            
+                <a href="Chapter4-9.html">
+            
+                    
+                    4.9 GPIO-LED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.10" data-path="Chapter4-10.html">
+            
+                <a href="Chapter4-10.html">
+            
+                    
+                    4.10 Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.11" data-path="Chapter4-11.html">
+            
+                <a href="Chapter4-11.html">
+            
+                    
+                    4.11 USB Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.12" data-path="Chapter4-12.html">
+            
+                <a href="Chapter4-12.html">
+            
+                    
+                    4.12 USB Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="Chapter5.html">
+            
+                <a href="Chapter5.html">
+            
+                    
+                    5. Qt应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.6.1" data-path="Chapter5-1.html">
+            
+                <a href="Chapter5-1.html">
+            
+                    
+                    5.1 安装QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.2" data-path="Chapter5-2.html">
+            
+                <a href="Chapter5-2.html">
+            
+                    
+                    5.2 配置QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.3" data-path="Chapter5-3.html">
+            
+                <a href="Chapter5-3.html">
+            
+                    
+                    5.3 编译运行QT应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="Chapter6.html">
+            
+                <a href="Chapter6.html">
+            
+                    
+                    6. 系统更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="Chapter7.html">
+            
+                <a href="Chapter7.html">
+            
+                    
+                    7. 外设模块使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.8.1" data-path="Chapter7-1.html">
+            
+                <a href="Chapter7-1.html">
+            
+                    
+                    7.1 4.3寸电阻屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.8.2" data-path="Chapter7-2.html">
+            
+                <a href="Chapter7-2.html">
+            
+                    
+                    7.2 WIFI模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.3" data-path="Chapter7-3.html">
+            
+                <a href="Chapter7-3.html">
+            
+                    
+                    7.3 USB摄像头模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.4" data-path="Chapter7-4.html">
+            
+                <a href="Chapter7-4.html">
+            
+                    
+                    7.4 GPS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.5" data-path="Chapter7-5.html">
+            
+                <a href="Chapter7-5.html">
+            
+                    
+                    7.5 GPRS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="appendixa.html">
+            
+                <a href="appendixa.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="appendixb.html">
+            
+                <a href="appendixb.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+        
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7.2 WIFI模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="72-wifi-&#x6A21;&#x5757;">7.2 WIFI &#x6A21;&#x5757;</h3>
+<p>&#x672C;&#x7AE0;&#x8BB2;&#x8FF0;USB WIFI&#x548C;SIDO WIFI&#x5728;&#x5F00;&#x53D1;&#x677F;&#x7684;&#x4E0A;&#x7684;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x548C;&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong>&#x786C;&#x4EF6;&#x73AF;&#x5883;&#xFF1A;</strong></p>
+<ul>
+<li><p>MYD-AM335X&#x7CFB;&#x5217;&#x5F00;&#x53D1;&#x677F;&#x4E00;&#x5757;</p>
+</li>
+<li><p>MY-WF003U &#x6A21;&#x5757;&#x3001;MY-WF004S &#x6A21;&#x5757;</p>
+</li>
+<li><p>USB&#x8F6C;TTL&#x8C03;&#x8BD5;&#x4E32;&#x53E3;&#x4E00;&#x6839;&#xFF0C;&#x8FDE;&#x63A5;MYD-AM335X&#x7CFB;&#x5217;&#x5F00;&#x53D1;&#x677F; Debug&#x4E32;&#x53E3;&#x548C;PC, PC&#x7AEF;&#x6CE2;&#x7279;&#x7387;&#x8BBE;&#x7F6E;115200-8-n-1</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x63A5;&#x53E3;</th>
+<th style="text-align:left">MYD-AM335X</th>
+<th style="text-align:left">MYD-AM335X-Y</th>
+<th style="text-align:left">MYD-AM335X-J</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Debug&#x4E32;&#x53E3;</td>
+<td style="text-align:left">J12 UART0</td>
+<td style="text-align:left">J10  Debug UART</td>
+<td style="text-align:left">J3 USB_UART</td>
+</tr>
+<tr>
+<td style="text-align:left">USB&#x63A5;&#x53E3;</td>
+<td style="text-align:left">J3 J4</td>
+<td style="text-align:left">J19 USB_HOST</td>
+<td style="text-align:left">J27 USB_HOST</td>
+</tr>
+<tr>
+<td style="text-align:left">SDIO&#x63A5;&#x53E3;</td>
+<td style="text-align:left">J17 TF_CARD</td>
+<td style="text-align:left">J12</td>
+<td style="text-align:left">J19 Micro_SD</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#xFF1A;</strong></p>
+<ul>
+<li><p>Linux Kernel 4.1.18</p>
+</li>
+<li><p>wpa_supplicant &#x5E94;&#x7528;&#x7A0B;&#x5E8F;</p>
+</li>
+<li><p>hostapd &#x5E94;&#x7528;&#x7A0B;&#x5E8F;</p>
+</li>
+<li><p>iptables &#x5E94;&#x7528;&#x7A0B;&#x5E8F;</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x5305;&#x542B;MEASY-HMI&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;connman&#x4E0E;network manager&#x51B2;&#x7A81;&#xFF0C;&#x5982;&#x8981;&#x6D4B;&#x8BD5;WIFI,&#x9700;&#x5148;&#x7981;&#x7528;connman&#x3002;&#x53EF;&#x4EE5;&#x5C06;/etc/init.d/S45connman&#x91CD;&#x547D;&#x540D;&#x4E3A;/etc/init.d/K45connman&#x4E4B;&#x540E;&#x91CD;&#x542F;&#x7CFB;&#x7EDF;&#x3002;</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5F00;&#x53D1;&#x677F;</th>
+<th style="text-align:left">&#x8BBE;&#x5907;&#x6811;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">MYD-AM335X</td>
+<td style="text-align:left">myd_c335x.dtb</td>
+</tr>
+<tr>
+<td style="text-align:left">MYD-AM335X-Y</td>
+<td style="text-align:left">myd_y335x.dtb</td>
+</tr>
+<tr>
+<td style="text-align:left">MYD-AM335X-J</td>
+<td style="text-align:left">myd_j335x.dtb</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;&#xFF1A;</strong></p>
+<p>&#x5C06;MY-WF003U &#x6A21;&#x5757;&#x63D2;&#x5165;&#x5F00;&#x53D1;&#x677F;USB&#x63A5;&#x53E3;&#x6216;&#x8005;MY-WF004S &#x6A21;&#x5757;&#x63D2;&#x5165;&#x5F00;&#x53D1;&#x677F;TF&#x5361;&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>ifconfig -a</code>&#x5373;&#x53EF;&#x770B;&#x5230;&#x6A21;&#x5757;&#x5DF2;&#x52A0;&#x8F7D;&#x9A71;&#x52A8;&#x5E76;&#x751F;&#x6210;&#x4E86;WLAN&#x8BBE;&#x5907;&#x3002;</p>
+<pre><code># ifconfig -a
+
+
+eth0      Link encap:Ethernet  HWaddr 68:9E:19:BC:1C:84  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:240 
+
+eth1      Link encap:Ethernet  HWaddr 68:9E:19:BC:1C:86  
+          BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 00:1D:43:A0:04:11  
+          BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+</code></pre><p><strong>WIFI STA&#x6A21;&#x5F0F;</strong></p>
+<p>1.&#x4FEE;&#x6539;<em>/etc/wap_supplicant.conf</em>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;ssid&#x548C;psk&#x7684;&#x503C;&#xFF0C;ssid&#x4E3A;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x4E2D;&#x7684;wifi ap&#x540D;&#x79F0;&#xFF0C;psk&#x4E3A;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x4E2D;wifi ap&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<pre><code># cat /etc/wpa_supplicant.conf 
+ctrl_interface=/var/run/wpa_supplicant
+ap_scan=1
+p2p_disabled=1
+
+network={  
+ ssid=&quot;MYIR_TECH&quot;
+ scan_ssid=1
+ proto=WPA RSN
+ pairwise=CCMP TKIP NONE
+ key_mgmt=WPA-EAP WPA-PSK IEEE8021X NONE
+ group=TKIP CCMP
+ psk=&quot;myir2016&quot; 
+ priority=10
+}
+</code></pre><p>2.&#x8FDE;&#x63A5;wifi ap&#x3002;</p>
+<p>#<code>wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -B</code></p>
+<p>3.&#x83B7;&#x53D6;IP&#x5730;&#x5740;&#x53CA;DNS&#x3002;</p>
+<pre><code>#udhcpc -b -i wlan0
+udhcpc: started, v1.25.1
+udhcpc: sending discover
+udhcpc: sending select for 192.168.30.115
+udhcpc: lease of 192.168.30.115 obtained, lease time 3600
+deleting routers
+adding dns 223.5.5.5
+adding dns 201.104.111.114
+</code></pre><p>4.ping&#x6D4B;&#x8BD5;&#x3002;</p>
+<pre><code># ping www.baidu.com
+PING www.baidu.com (61.135.169.125): 56 data bytes
+64 bytes from 61.135.169.125: seq=0 ttl=56 time=29.253 ms
+64 bytes from 61.135.169.125: seq=1 ttl=56 time=32.218 ms
+64 bytes from 61.135.169.125: seq=2 ttl=56 time=24.717 ms
+64 bytes from 61.135.169.125: seq=4 ttl=56 time=141.210 ms
+64 bytes from 61.135.169.125: seq=5 ttl=56 time=64.064 ms
+64 bytes from 61.135.169.125: seq=11 ttl=56 time=133.112 ms
+</code></pre><p><strong>WIFI SoftAP&#x6A21;&#x5F0F;</strong></p>
+<p>1.&#x4FEE;&#x6539;<em>/etc/hostapd.conf</em>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;ssid&#x548C;wpa_passphrase&#x7684;&#x503C;&#xFF0C;ssid&#x4E3A;wifi&#x6A21;&#x5757;&#x751F;&#x6210;&#x7684;ap&#x70ED;&#x70B9;&#x7684;&#x540D;&#x79F0;&#xFF0C;wpa_passphrase&#x4E3A;ap&#x70ED;&#x70B9;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<pre><code># cat /etc/hostapd.conf 
+interface=wlan0
+ssid=myirAP
+hw_mode=g
+channel=6
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_passphrase=123456789
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+</code></pre><p>2.&#x6839;&#x636E;&#x9700;&#x6C42;&#x4FEE;&#x6539;/etc/dhcp/dhcpd.conf &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x8FDE;&#x4E0A;wifi ap&#x8BBE;&#x5907;&#x63D0;&#x4F9B;DHCP&#x670D;&#x52A1;&#x3002;</p>
+<pre><code># cat /etc/dhcp/dhcpd.conf 
+ddns-update-style interim;
+ignore client-updates;
+
+subnet 192.168.43.0 netmask 255.255.255.0{
+range 192.168.43.100 192.168.43.150;
+default-lease-time 86400;
+max-lease-time 86400;
+option routers 192.168.43.1;
+option broadcast-address 192.168.43.255;
+option subnet-mask 255.255.255.0;
+option domain-name &quot;redpinesignals.com&quot;;
+option domain-name-servers 114.114.114.114;
+host VAP_0.redpinesignals.com{
+        hardware ethernet 00:23:a7:3a:11:d1;
+        fixed-address 192.168.43.1;
+        }
+}
+</code></pre><p>3.&#x521B;&#x5EFA;ap&#x70ED;&#x70B9;&#x3002;</p>
+<pre><code># hostapd /etc/hostapd.conf -B
+Configuration file: /etc/hostapd.conf
+Using interface wlan0 with hwaddr 00:1d:43:a0:04:11 and ssid &quot;myirAP&quot;
+random: Only 15/20 bytes of strong random data available from /dev/random
+random: Not enough entropy pool available for secure operations
+WPA: Not enough entropy in random pool for secure operations - update keys later when the 
+first station connects
+wlan0: interface state UNINITIALIZED-&gt;ENABLED
+wlan0: AP-ENABLED
+</code></pre><p>4.&#x914D;&#x7F6E;ap&#x70ED;&#x70B9;&#x7684;ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF0C;&#x8FD9;&#x4E2A;IP&#x5730;&#x5740;&#x9700;&#x8981;&#x6839;&#x636E;/etc/dhcp/dhcpd.conf&#x4E2D;routers&#x7684;&#x503C;&#x6765;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</p>
+<pre><code># ifconfig wlan0 192.168.43.1 netmask 255.255.255.0 up
+</code></pre><p>5.&#x542F;&#x52A8;wlan0&#x7684;DHCP&#x670D;&#x52A1;&#x3002;</p>
+<pre><code># dhcpd wlan0
+Internet Systems Consortium DHCP Server 4.3.5
+Copyright 2004-2016 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+WARNING: Host declarations are global.  They are not limited to the scope you declared 
+them in.
+Config file: /etc/dhcp/dhcpd.conf
+Database file: /var/lib/dhcp/dhcpd.leases
+PID file: /var/run/dhcpd.pid
+Wrote 0 deleted host decls to leases file.
+Wrote 0 new dynamic host decls to leases file.
+Wrote 0 leases to leases file.
+Listening on LPF/wlan0/00:1d:43:a0:04:11/192.168.43.0/24
+Sending on   LPF/wlan0/00:1d:43:a0:04:11/192.168.43.0/24
+Sending on   Socket/fallback/fallback-net
+</code></pre><p>&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x4E94;&#x4E2A;&#x6B65;&#x9AA4;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x4ED6;WIFI STA&#x6A21;&#x5F0F;&#x7684;&#x8BBE;&#x5907;&#x6765;&#x8FDE;&#x63A5;&#x6240;&#x521B;&#x5EFA;&#x7684;AP&#x70ED;&#x70B9;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x5C40;&#x57DF;&#x7F51;&#x901A;&#x4FE1;&#xFF0C;&#x5982;&#x9700;&#x8FDB;&#x884C;&#x5916;&#x7F51;&#x901A;&#x4FE1;&#x8FD8;&#x8981;&#x5B8C;&#x6210;&#x4E0B;&#x9762;&#x6B65;&#x9AA4;&#x3002;</p>
+<p>1.&#x5C06;eth0&#x63A5;&#x5165;&#x4E92;&#x8054;&#x7F51;&#x7EDC;&#xFF0C;&#x5E76;&#x83B7;&#x53D6;IP&#x5730;&#x5740;&#x3002;</p>
+<pre><code># udhcpc eth0
+udhcpc: started, v1.25.1
+udhcpc: sending discover
+udhcpc: sending select for 192.168.30.160
+udhcpc: lease of 192.168.30.160 obtained, lease time 3600
+deleting routers
+adding dns 223.5.5.5
+adding dns 201.104.111.114
+</code></pre><p>2.&#x6253;&#x5F00;IP&#x62A5;&#x6587;&#x8F6C;&#x53D1;&#x3002;</p>
+<pre><code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</code></pre><p>3.&#x914D;&#x7F6E;eth0&#x4E3A;&#x6240;&#x6709;&#x62A5;&#x6587;&#x7684;&#x51FA;&#x53E3;&#x3002;</p>
+<pre><code>iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+</code></pre><p>&#x6267;&#x884C;&#x5B8C;&#x4E0A;&#x8FF0;3&#x4E2A;&#x6B65;&#x9AA4;&#xFF0C;WIFI&#x8BBE;&#x5907;&#x5C31;&#x53EF;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;AP&#x70ED;&#x70B9;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#x4E86;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter7-1.html" class="navigation navigation-prev " aria-label="Previous page: 7.1 4.3寸电阻屏">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter7-3.html" class="navigation navigation-next " aria-label="Next page: 7.3 USB摄像头模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.2 WIFI模块","level":"1.8.2","depth":2,"next":{"title":"7.3 USB摄像头模块","level":"1.8.3","depth":2,"path":"Chapter7-3.md","ref":"Chapter7-3.md","articles":[]},"previous":{"title":"7.1 4.3寸电阻屏","level":"1.8.1","depth":2,"path":"Chapter7-1.md","ref":"Chapter7-1.md","articles":[]},"dir":"ltr"},"config":{"tbfed-pagefooter":{"copyright":"Copyright@MYIR Tech Limited 2011-2017 all rights reserved.","modify_label":"���ļ��޶�ʱ�䣺","modify_format":"YYYY-MM-DD HH:mm:ss"},"plugins":["theme-pdftoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-pdftoc":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Sunny.Guo","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MYD-AM335X-Linux4.1.18-Development-Guide","language":"zh-hans","links":{"sidebar":{"MYiR Technology Ltd.":"http://www.myir-tech.com"}},"gitbook":"3.x.x"},"file":{"path":"Chapter7-2.md","mtime":"2018-10-10T03:52:36.158Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-18T09:48:11.973Z"},"basePath":".","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

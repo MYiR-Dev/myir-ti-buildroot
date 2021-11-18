@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.8 KeyPad · MYD-AM335X-Linux4.1.18-Development-Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sunny.Guo">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter4-9.html" />
+    
+    
+    <link rel="prev" href="Chapter4-7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.myir-tech.com" target="_blank" class="custom-link">MYiR Technology Ltd.</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+            
+        
+
+        
+
+        
+            
+    
+        
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Chapter1.html">
+            
+                <a href="Chapter1.html">
+            
+                    
+                    1. 软件资源介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="Chapter2.html">
+            
+                <a href="Chapter2.html">
+            
+                    
+                    2. 部署开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.3.1" data-path="Chapter2-1.html">
+            
+                <a href="Chapter2-1.html">
+            
+                    
+                    2.1 安装工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3.2" data-path="Chapter2-2.html">
+            
+                <a href="Chapter2-2.html">
+            
+                    
+                    2.2 设置交叉编译工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    3. 构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="Chapter3-1.html">
+            
+                <a href="Chapter3-1.html">
+            
+                    
+                    3.1 Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="Chapter3-2.html">
+            
+                <a href="Chapter3-2.html">
+            
+                    
+                    3.2 Linux kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.3" data-path="Chapter3-3.html">
+            
+                <a href="Chapter3-3.html">
+            
+                    
+                    3.3 构建文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="Chapter3-4.html">
+            
+                <a href="Chapter3-4.html">
+            
+                    
+                    3.4 编译QT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="Chapter4.html">
+            
+                <a href="Chapter4.html">
+            
+                    
+                    4. Linux应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="Chapter4-1.html">
+            
+                <a href="Chapter4-1.html">
+            
+                    
+                    4.1 LCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="Chapter4-2.html">
+            
+                <a href="Chapter4-2.html">
+            
+                    
+                    4.2 Touch Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="Chapter4-3.html">
+            
+                <a href="Chapter4-3.html">
+            
+                    
+                    4.3 RTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="Chapter4-4.html">
+            
+                <a href="Chapter4-4.html">
+            
+                    
+                    4.4 RS485
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="Chapter4-5.html">
+            
+                <a href="Chapter4-5.html">
+            
+                    
+                    4.5 CAN Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="Chapter4-6.html">
+            
+                <a href="Chapter4-6.html">
+            
+                    
+                    4.6 Ethernet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="Chapter4-7.html">
+            
+                <a href="Chapter4-7.html">
+            
+                    
+                    4.7 NAND Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.5.8" data-path="Chapter4-8.html">
+            
+                <a href="Chapter4-8.html">
+            
+                    
+                    4.8 KeyPad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.9" data-path="Chapter4-9.html">
+            
+                <a href="Chapter4-9.html">
+            
+                    
+                    4.9 GPIO-LED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.10" data-path="Chapter4-10.html">
+            
+                <a href="Chapter4-10.html">
+            
+                    
+                    4.10 Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.11" data-path="Chapter4-11.html">
+            
+                <a href="Chapter4-11.html">
+            
+                    
+                    4.11 USB Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.12" data-path="Chapter4-12.html">
+            
+                <a href="Chapter4-12.html">
+            
+                    
+                    4.12 USB Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="Chapter5.html">
+            
+                <a href="Chapter5.html">
+            
+                    
+                    5. Qt应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.6.1" data-path="Chapter5-1.html">
+            
+                <a href="Chapter5-1.html">
+            
+                    
+                    5.1 安装QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.2" data-path="Chapter5-2.html">
+            
+                <a href="Chapter5-2.html">
+            
+                    
+                    5.2 配置QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.3" data-path="Chapter5-3.html">
+            
+                <a href="Chapter5-3.html">
+            
+                    
+                    5.3 编译运行QT应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="Chapter6.html">
+            
+                <a href="Chapter6.html">
+            
+                    
+                    6. 系统更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="Chapter7.html">
+            
+                <a href="Chapter7.html">
+            
+                    
+                    7. 外设模块使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.8.1" data-path="Chapter7-1.html">
+            
+                <a href="Chapter7-1.html">
+            
+                    
+                    7.1 4.3寸电阻屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.2" data-path="Chapter7-2.html">
+            
+                <a href="Chapter7-2.html">
+            
+                    
+                    7.2 WIFI模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.3" data-path="Chapter7-3.html">
+            
+                <a href="Chapter7-3.html">
+            
+                    
+                    7.3 USB摄像头模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.4" data-path="Chapter7-4.html">
+            
+                <a href="Chapter7-4.html">
+            
+                    
+                    7.4 GPS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.5" data-path="Chapter7-5.html">
+            
+                <a href="Chapter7-5.html">
+            
+                    
+                    7.5 GPRS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="appendixa.html">
+            
+                <a href="appendixa.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="appendixb.html">
+            
+                <a href="appendixb.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+        
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >4.8 KeyPad</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="48-keypad&#x6D4B;&#x8BD5;">4.8 KeyPad&#x6D4B;&#x8BD5;</h2>
+<p>&#x672C;&#x4F8B;&#x7A0B;&#x6F14;&#x793A;&#x4F7F;&#x7528;Linux User API&#x8BFB;&#x53D6;&#x6309;&#x952E;&#x4FE1;&#x606F;&#xFF0C;&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x8003;&#x6E90;&#x7801;&#x3002;</p>
+<p><strong>&#x6D4B;&#x8BD5;&#x786C;&#x4EF6;&#x73AF;&#x5883;&#xFF1A;</strong></p>
+<ul>
+<li>&#x786C;&#x4EF6;&#x8C03;&#x8BD5;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x89C1;&#x90E8;&#x7F72;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x786C;&#x4EF6;&#x8C03;&#x8BD5;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x90E8;&#x5206;&#x3002;</li>
+<li>MYD-AM335x&#x7CFB;&#x5217;&#x5F00;&#x53D1;&#x677F;&#x4E00;&#x5757;</li>
+</ul>
+<p><strong>&#x6D4B;&#x8BD5;&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#xFF1A;</strong></p>
+<ul>
+<li>Linux Kernel 4.1.18</li>
+<li>hexdump&#x6216;keypad_test&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</li>
+</ul>
+<p><strong>&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;:</strong>
+&#x2003;&#x2003;&#x5C06;&#x76EE;&#x5F55;<code>&lt;WORKDIR&gt;/Examples/keypad</code>&#x4E2D;&#x7684;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;keypad_test&#x62F7;&#x8D1D;&#x81F3;&#x5F00;&#x53D1;&#x677F;/usr/bin/&#x76EE;&#x5F55;&#x4E0B;, &#x6267;&#x884C;&#x8BE5;&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ chmod 777 /usr/bin/keypad_test
+$ keypad_test -h
+Usage: keypad_test [options]
+
+Version 1.0
+Options:
+-d | --device name   keypad device name, default: /dev/input/event0
+-h | --help          Print this message
+</code></pre><p>&#x2003;&#x2003;&#x67E5;&#x770B;MYD-AM335X&#x6309;&#x952E;&#x8BBE;&#x5907;&#x5BF9;&#x5E94;&#x7684;&#x8BBE;&#x5907;&#x8282;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;K2,K3&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x5BF9;&#x5E94;/dev/input/event1&#x3002;</p>
+<pre><code># ls /dev/input/
+by-path/ event0   event1   mice     mouse0
+
+# cat /sys/class/input/event0/device/name
+ti-tsc
+
+# cat /sys/class/input/event1/device/name
+volume_keys@0
+</code></pre><p>&#x2003;&#x2003;&#x6D4B;&#x8BD5;MYD-AM335X K2&#x548C;K3&#x3002;</p>
+<pre><code># keypad_test -d /dev/input/event1
+Event: Code = 115, Type = 1, Value=1                -- &#x6309;&#x4E0B;K2
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 115, Type = 1, Value=0                -- &#x91CA;&#x653E;K2
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=1                -- &#x6309;&#x4E0B;K3
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=2
+Event: Code = 0, Type = 0, Value=1
+Event: Code = 114, Type = 1, Value=0                -- &#x91CA;&#x653E;K3
+Event: Code = 0, Type = 0, Value=0
+</code></pre><p>&#x2003;&#x2003;&#x67E5;&#x770B;MYD-AM335X-Y&#x6309;&#x952E;&#x8BBE;&#x5907;&#x5BF9;&#x5E94;&#x7684;&#x8BBE;&#x5907;&#x8282;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;K3,K4&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x5BF9;&#x5E94;/dev/input/event3&#xFF0C;K5&#x5BF9;&#x5E94;/dev/input/event2&#x3002;</p>
+<pre><code># ls /dev/input/
+by-path  event0   event1   event2   event3   mice     mouse0
+
+# cat /sys/class/input/event0/device/name
+beeper
+# cat /sys/class/input/event1/device/name
+ti-tsc
+# cat /sys/class/input/event2/device/name
+tps65217_pwrbutton
+# cat /sys/class/input/event3/device/name
+volume_keys@0
+</code></pre><p>&#x2003;&#x2003;&#x6D4B;&#x8BD5;MYD-AM335X-Y K3&#x548C;K4&#x3002;</p>
+<pre><code># keypad_test -d /dev/input/event3
+Event: Code = 115, Type = 1, Value=1                -- &#x6309;&#x4E0B;K3
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 115, Type = 1, Value=0                -- &#x91CA;&#x653E;K3
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=1                -- &#x6309;&#x4E0B;K4
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=0                -- &#x91CA;&#x653E;K4
+Event: Code = 0, Type = 0, Value=0
+</code></pre><p>&#x2003;&#x2003;&#x6D4B;&#x8BD5;MYD-AM335X-Y K5&#x3002;</p>
+<pre><code># keypad_test -d /dev/input/event2
+Event: Code = 116, Type = 1, Value=1                -- &#x6309;&#x4E0B;K5
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 116, Type = 1, Value=0                -- &#x91CA;&#x653E;K5
+Event: Code = 0, Type = 0, Value=0
+</code></pre><p>&#x2003;&#x2003;&#x67E5;&#x770B;MYD-AM335X-J&#x6309;&#x952E;&#x8BBE;&#x5907;&#x5BF9;&#x5E94;&#x7684;&#x8BBE;&#x5907;&#x8282;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;K3,K4&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x5BF9;&#x5E94;/dev/input/event3&#xFF0C;K2&#x5BF9;&#x5E94;/dev/input/event1&#x3002;</p>
+<pre><code># ls /dev/input/
+by-path  event0   event1   event2   event3   mice     mouse0   mouse1
+
+# cat /sys/class/input/event0/device/name
+ti-tsc
+# cat /sys/class/input/event1/device/name
+tps65217_pwrbutton
+# cat /sys/class/input/event2/device/name
+ft5x06_ts
+# cat /sys/class/input/event3/device/name
+volume_keys@0
+</code></pre><p>&#x2003;&#x2003;&#x6D4B;&#x8BD5;MYD-AM335X-J K3&#x548C;K4&#x3002;</p>
+<pre><code># keypad_test -d /dev/input/event3
+Event: Code = 115, Type = 1, Value=1            -- &#x6309;&#x4E0B;K3
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 115, Type = 1, Value=0            -- &#x91CA;&#x653E;K3
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=1            -- &#x6309;&#x4E0B;K4
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 114, Type = 1, Value=0            -- &#x91CA;&#x653E;K4
+Event: Code = 0, Type = 0, Value=0
+</code></pre><p>&#x2003;&#x2003;&#x6D4B;&#x8BD5;MYD-AM335X-J K2&#x3002;</p>
+<pre><code># keypad_test -d /dev/input/event1
+Event: Code = 116, Type = 1, Value=1            -- &#x6309;&#x4E0B;K2
+Event: Code = 0, Type = 0, Value=0
+Event: Code = 116, Type = 1, Value=0            -- &#x91CA;&#x653E;K2
+Event: Code = 0, Type = 0, Value=0
+</code></pre><p>&#x2003;&#x2003;&#x4EE5;&#x4E0A;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x4E2D;&#x8FD4;&#x56DE;&#x7684;Event Code&#x5373;&#x4E3A;&#x6309;&#x952E;&#x952E;&#x503C;&#xFF0C;&#x548C;&#x5185;&#x6838;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x952E;&#x503C;&#x5FC5;&#x987B;&#x4E00;&#x81F4;&#x3002;
+&#x2003;&#x2003;&#x7528;&#x6237;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Buildroot&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x81EA;&#x5E26;&#x7684;hexdump&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x6309;&#x952E;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E0B;&#x9762;&#x4EE5;MYD-AM335X&#x4E3A;&#x4F8B;&#xFF0C;&#x5176;&#x5B83;&#x7248;&#x578B;&#x7684;KeyPad&#x6D4B;&#x8BD5;&#x60C5;&#x51B5;&#x7C7B;&#x4F3C;&#x3002;&#x5206;&#x522B;&#x6309;K2,K3&#x8FD9;&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x3002; &#x5176;&#x4E2D;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x4E2D;&#x7B2C;7&#x5217;&#x4E2D;&#x7684;0073&#x548C;0072&#x5373;&#x4E3A;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6309;&#x952E;&#x952E;&#x503C;115&#x548C;114&#xFF0C;&#x5176;&#x5B83;&#x4FE1;&#x606F;&#x542B;&#x4E49;&#x8BF7;&#x53C2;&#x9605;hexdump&#x8BF4;&#x660E;&#x3002;</p>
+<pre><code># hexdump /dev/input/event1
+0000000 022b 0000 2a83 0005 0001 0073 0001 0000
+0000010 022b 0000 2a83 0005 0000 0000 0000 0000
+0000020 022b 0000 78b5 0007 0001 0073 0000 0000
+0000030 022b 0000 78b5 0007 0000 0000 0000 0000
+
+0000040 0231 0000 8c69 0001 0001 0072 0001 0000
+0000050 0231 0000 8c69 0001 0000 0000 0000 0000
+0000060 0231 0000 fc11 0003 0001 0072 0000 0000
+0000070 0231 0000 fc11 0003 0000 0000 0000 0000
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter4-7.html" class="navigation navigation-prev " aria-label="Previous page: 4.7 NAND Flash">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter4-9.html" class="navigation navigation-next " aria-label="Next page: 4.9 GPIO-LED">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.8 KeyPad","level":"1.5.8","depth":2,"next":{"title":"4.9 GPIO-LED","level":"1.5.9","depth":2,"path":"Chapter4-9.md","ref":"Chapter4-9.md","articles":[]},"previous":{"title":"4.7 NAND Flash","level":"1.5.7","depth":2,"path":"Chapter4-7.md","ref":"Chapter4-7.md","articles":[]},"dir":"ltr"},"config":{"tbfed-pagefooter":{"copyright":"Copyright@MYIR Tech Limited 2011-2017 all rights reserved.","modify_label":"���ļ��޶�ʱ�䣺","modify_format":"YYYY-MM-DD HH:mm:ss"},"plugins":["theme-pdftoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-pdftoc":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Sunny.Guo","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MYD-AM335X-Linux4.1.18-Development-Guide","language":"zh-hans","links":{"sidebar":{"MYiR Technology Ltd.":"http://www.myir-tech.com"}},"gitbook":"3.x.x"},"file":{"path":"Chapter4-8.md","mtime":"2018-07-03T02:00:10.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-18T09:48:11.973Z"},"basePath":".","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

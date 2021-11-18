@@ -1,0 +1,60 @@
+##3.2 编译Linux内核
+
+&emsp;&emsp;进入Kernel目录，解压内核源码：
+
+```c
+$ cd <WORKDIR>/Kernel
+$ tar -jxvf myir-kernel.tar.bz2
+$ cd myir-kernel
+```
+
+&emsp;&emsp;开始编译Kernel,不同的开发板对应不同的配置文件，配置文件位于myir-kernel/arch/arm/configs/目录。
+{% raw %}
+<div align="center" > 表 3-2-1 Kernel配置文件列表 </div>
+{% endraw %}  
+| 开发板| 编译选项 |
+|---------|-------------|------|
+| MYD-AM335X | myd_c335x_defconfig |
+| MYD-AM335X-Y | myd_y335x_defconfig |
+| MYD-AM335X-J | myd_j335x_defconfig |
+
+&emsp;&emsp;如果用户想编译和安装内核模块，需要先设置`INSTALL_MOD_PATH`环境变量，在使用NFS调试内核的时候会比较有用。需要注意的是内核模块包含一个`Version Magic`，它必须与内核`zImage`匹配，否则内核模块会加载失败，出现类似下面的错误：  
+```
+[ 2750.480576] ti_am335x_adc: disagrees about version of symbol dev_warn
+[ 2750.487670] ti_am335x_adc: Unknown symbol dev_warn (err -22)
+[ 2750.493977] ti_am335x_adc: disagrees about version of symbol dev_err
+[ 2750.502474] ti_am335x_adc: Unknown symbol dev_err (err -22)
+```
+
+&emsp;&emsp;所以内核修改之后，内核模块需要和内核`zImage`一起编译，下面以MYD-AM335X开发板为例，说明kernel的编译过程：
+
+```c
+$ export INSTALL_MOD_PATH=$HOME/export/rootfsa/
+$ make distclean
+$ make myd_c335x_defconfig
+$ make zImage dtbs
+$ make modules
+$ make modules_install
+```
+
+&emsp;&emsp;其中第二步make中的内核配置文件选项见上表。编译完成后，会在arch/arm/boot目录下生成zImage文件,会在arch/arm/boot/dts目录下生成设备树的二进制.dtb文件。同一块开发板，适当修改DTS文件可以适应于不同的硬件配置，例如屏幕尺寸大小可以修改dts文件。MYD-AM335X-Y和MYD-AM335X-J的编译和MYD-AM335X类似。
+
+&emsp;&emsp;上面配置中默认为7寸屏，256M NAND 256M DDR，禁用SGX功能，用户可以通过`<WORKDIR>/Patches`中的补丁文件生成配置的设备树文件，然后编译内核使用设备树文件即可。以下是相关补丁的列表说明：
+
+  | 板型 | MYD-AM335X | MYD-AM335X-Y | MYD-AM335X-J |
+  | ----| ---- | ---- | ---- |
+  | HDMI补丁 | myd_c335x_hdmi_display.diff | 无扩展 | 无扩展 |
+  | 4.3寸屏补丁 | myd-am335x-lcd4.3.diff | myd-am335x-y-lcd4.3.diff | myd-am335x-j-lcd4.3.diff |
+  | SGX补丁 | myd-am335x-sgx.diff | myd-am335x-y-sgx.diff | myd-am335x-j-sgx.diff |
+
+&emsp;&emsp;如果用户希望使用QT中的QML功能，则必须在内核设备树中使能SGX。例如，MYD-AM335X-Y使能SGX, 4.3寸屏打补丁如下：
+
+```c
+$ patch -p1 < <WORKDIR>/Patches/myd-am335x-y-lcd4.3.diff
+
+$ patch -p1 < <WORKDIR>/Patches/myd-am335x-y-sgx.diff
+```
+&emsp;&emsp;编译设备树文件,并用arch/arm/boot/dts目录下的设备树文件去替换烧录的image中的设备树文件。
+```c
+make dtbs
+```

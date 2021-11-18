@@ -1,0 +1,826 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.2 配置QtCreator · MYD-AM335X-Linux4.1.18-Development-Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sunny.Guo">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter5-3.html" />
+    
+    
+    <link rel="prev" href="Chapter5-1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.myir-tech.com" target="_blank" class="custom-link">MYiR Technology Ltd.</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+            
+        
+
+        
+
+        
+            
+    
+        
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Chapter1.html">
+            
+                <a href="Chapter1.html">
+            
+                    
+                    1. 软件资源介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="Chapter2.html">
+            
+                <a href="Chapter2.html">
+            
+                    
+                    2. 部署开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.3.1" data-path="Chapter2-1.html">
+            
+                <a href="Chapter2-1.html">
+            
+                    
+                    2.1 安装工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3.2" data-path="Chapter2-2.html">
+            
+                <a href="Chapter2-2.html">
+            
+                    
+                    2.2 设置交叉编译工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    3. 构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="Chapter3-1.html">
+            
+                <a href="Chapter3-1.html">
+            
+                    
+                    3.1 Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="Chapter3-2.html">
+            
+                <a href="Chapter3-2.html">
+            
+                    
+                    3.2 Linux kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.3" data-path="Chapter3-3.html">
+            
+                <a href="Chapter3-3.html">
+            
+                    
+                    3.3 构建文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="Chapter3-4.html">
+            
+                <a href="Chapter3-4.html">
+            
+                    
+                    3.4 编译QT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="Chapter4.html">
+            
+                <a href="Chapter4.html">
+            
+                    
+                    4. Linux应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="Chapter4-1.html">
+            
+                <a href="Chapter4-1.html">
+            
+                    
+                    4.1 LCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="Chapter4-2.html">
+            
+                <a href="Chapter4-2.html">
+            
+                    
+                    4.2 Touch Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="Chapter4-3.html">
+            
+                <a href="Chapter4-3.html">
+            
+                    
+                    4.3 RTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="Chapter4-4.html">
+            
+                <a href="Chapter4-4.html">
+            
+                    
+                    4.4 RS485
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="Chapter4-5.html">
+            
+                <a href="Chapter4-5.html">
+            
+                    
+                    4.5 CAN Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="Chapter4-6.html">
+            
+                <a href="Chapter4-6.html">
+            
+                    
+                    4.6 Ethernet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="Chapter4-7.html">
+            
+                <a href="Chapter4-7.html">
+            
+                    
+                    4.7 NAND Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.8" data-path="Chapter4-8.html">
+            
+                <a href="Chapter4-8.html">
+            
+                    
+                    4.8 KeyPad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.9" data-path="Chapter4-9.html">
+            
+                <a href="Chapter4-9.html">
+            
+                    
+                    4.9 GPIO-LED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.10" data-path="Chapter4-10.html">
+            
+                <a href="Chapter4-10.html">
+            
+                    
+                    4.10 Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.11" data-path="Chapter4-11.html">
+            
+                <a href="Chapter4-11.html">
+            
+                    
+                    4.11 USB Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.12" data-path="Chapter4-12.html">
+            
+                <a href="Chapter4-12.html">
+            
+                    
+                    4.12 USB Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="Chapter5.html">
+            
+                <a href="Chapter5.html">
+            
+                    
+                    5. Qt应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.6.1" data-path="Chapter5-1.html">
+            
+                <a href="Chapter5-1.html">
+            
+                    
+                    5.1 安装QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.6.2" data-path="Chapter5-2.html">
+            
+                <a href="Chapter5-2.html">
+            
+                    
+                    5.2 配置QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.3" data-path="Chapter5-3.html">
+            
+                <a href="Chapter5-3.html">
+            
+                    
+                    5.3 编译运行QT应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="Chapter6.html">
+            
+                <a href="Chapter6.html">
+            
+                    
+                    6. 系统更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="Chapter7.html">
+            
+                <a href="Chapter7.html">
+            
+                    
+                    7. 外设模块使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.8.1" data-path="Chapter7-1.html">
+            
+                <a href="Chapter7-1.html">
+            
+                    
+                    7.1 4.3寸电阻屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.2" data-path="Chapter7-2.html">
+            
+                <a href="Chapter7-2.html">
+            
+                    
+                    7.2 WIFI模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.3" data-path="Chapter7-3.html">
+            
+                <a href="Chapter7-3.html">
+            
+                    
+                    7.3 USB摄像头模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.4" data-path="Chapter7-4.html">
+            
+                <a href="Chapter7-4.html">
+            
+                    
+                    7.4 GPS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.5" data-path="Chapter7-5.html">
+            
+                <a href="Chapter7-5.html">
+            
+                    
+                    7.5 GPRS模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="appendixa.html">
+            
+                <a href="appendixa.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="appendixb.html">
+            
+                <a href="appendixb.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+        
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5.2 配置QtCreator</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="52-&#x914D;&#x7F6E;qtcreator">5.2 &#x914D;&#x7F6E;QtCreator</h2>
+<ul>
+<li>&#x914D;&#x7F6E; QtCreator &#x5F00;&#x53D1;&#x73AF;&#x5883;:</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD0;&#x884C; QtCreator &#x540E;,&#x4F9D;&#x6B21;&#x70B9;&#x51FB;<code>Tools</code>-&gt;<code>Options</code>,&#x51FA;&#x73B0;&#x9009;&#x9879;&#x5BF9;&#x8BDD;&#x6846;,&#x5728;&#x5DE6;&#x8FB9;&#x70B9;&#x51FB;<code>Build &amp; Run</code>,&#x53F3;&#x8FB9;&#x9009;&#x62E9;<code>Compilers</code>&#x6807;&#x7B7E;&#x3002;</p>
+<p><img src="imagech/5_2_1.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-1 &#x7F16;&#x8BD1;&#x5668;&#x9009;&#x62E9; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x70B9;&#x51FB;&#x53F3;&#x4FA7;<code>Add</code>,&#x5F39;&#x51FA;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#x540E;,&#x9009;&#x62E9;<code>Custom</code>,&#x5728;&#x4E0B;&#x4FA7;&#x586B;&#x5199;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;: <code>Name</code>, <code>Compiler path</code>, <code>Make path</code> &#x548C; <code>ABI</code>&#x3002;&#x586B;&#x5199;&#x5B8C;&#x6210;&#x540E;,&#x70B9;&#x51FB;<code>Apply</code>,&#x8FDB;&#x884C;&#x4FDD;&#x5B58;&#x3002;</p>
+<p><img src="imagech/5_2_2.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-2 &#x6DFB;&#x52A0;&#x7F16;&#x8BD1;&#x5668; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x5728;&#x540C;&#x4E00;&#x7A97;&#x53E3;&#x4E0B;,&#x9009;&#x62E9;<code>Qt Version</code>&#x6807;&#x7B7E;,&#x5728;&#x53F3;&#x4FA7;&#x70B9;&#x51FB;<code>Add...</code>,&#x4F1A;&#x5F39;&#x51FA;&#x5BF9;&#x8BDD;&#x6846;,&#x5207;&#x6362;&#x76EE;&#x5F55;&#x5230;Chapter3.4&#x4E2D;&#x7F16;&#x8BD1;QT&#x5F97;&#x5230;&#x7684;SDK&#x76EE;&#x5F55;,&#x9009;&#x62E9;<code>qmake</code>&#x6587;&#x4EF6;&#x540E;,&#x70B9;&#x51FB;<code>Open</code>&#x6309;&#x94AE;,&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x70B9;&#x51FB;<code>Apply</code>&#x6309;&#x94AE;&#x4FDD;&#x5B58;&#x3002;</p>
+<p><img src="imagech/5_2_3.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-3 &#x9009;&#x62E9;qmake&#x6784;&#x5EFA;&#x5DE5;&#x5177; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x5728;<code>Build&amp;Run</code>&#x7A97;&#x53E3;&#xFF0C;&#x7EE7;&#x7EED;&#x9009;&#x62E9;&#x4E0A;&#x8FB9;&#x7684;<code>Kits</code>&#x6807;&#x7B7E;,&#x70B9;&#x51FB;&#x53F3;&#x4FA7;<code>Add</code>,&#x586B;&#x5199;&#x76F8;&#x5E94;&#x5185;&#x5BB9;&#x3002;&#x5176;&#x4E2D;<code>Sysroot</code>&#x9009;&#x62E9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#x94FE;&#x7684;&#x76EE;&#x5F55;,<code>Compiler</code>&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x586B;&#x5199;&#x7684;&#x540D;&#x79F0;,<code>Debugger</code>&#x9009;&#x62E9;<code>None</code>,<code>Qt version</code>&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x65F6;&#x7684;&#x540D;&#x79F0;,<code>CMake Tool</code>&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED8;&#x8BA4;&#x3002;</p>
+<p><img src="imagech/5_2_4.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-4 &#x6DFB;&#x52A0;Kits </div></p>
+<p></p>
+
+
+<ul>
+<li>&#x521B;&#x5EFA; Helloworld &#x9879;&#x76EE;:</li>
+</ul>
+<p>&#x2003;&#x2003;&#x5728;&#x83DC;&#x5355;&#x680F;&#x9009;&#x62E9;<code>File</code>-&gt;<code>New File or Project</code>,&#x5728;&#x6253;&#x5F00;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;,&#x4F9D;&#x6B21;&#x9009;&#x62E9;<code>Application</code>-&gt;<code>Qt Widgets Application</code>,&#x70B9;&#x51FB;<code>Choose...</code>, &#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;:</p>
+<p><img src="imagech/5_2_5.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-5 &#x521B;&#x5EFA;&#x65B0;&#x5DE5;&#x7A0B; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x5728;&#x5F39;&#x51FA;&#x7684;<code>Qt Widgets Application</code>&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;,&#x8BBE;&#x7F6E;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x4E3A;<code>helloworld</code>,<code>Create in</code>&#x4E00;&#x680F;&#x586B;&#x5199;&#x9879;&#x76EE;&#x7684;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;, &#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="imagech/5_2_6.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-6 &#x8BBE;&#x7F6E;&#x65B0;&#x5DE5;&#x7A0B;&#x540D;&#x79F0;&#x548C;&#x8DEF;&#x5F84; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x70B9;&#x51FB;<code>Next</code>&#x540E;,&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x597D;&#x7684;<code>Kits</code>,&#x7EE7;&#x7EED;&#x70B9;&#x51FB;<code>Next</code>, &#x5982;&#x4E0B;:</p>
+<p><img src="imagech/5_2_7.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-7 &#x8BBE;&#x7F6E;&#x65B0;&#x5DE5;&#x7A0B;Kits </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x7684;&#x7684;&#x5E94;&#x7528;&#x7EE7;&#x627F;&#x81EA;&#x54EA;&#x79CD;Widget,&#x9ED8;&#x8BA4;&#x9009;&#x62E9;QMainWindow,&#x7136;&#x540E;&#x70B9;&#x51FB;<code>Next</code>&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
+<p><img src="imagech/5_2_8.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-8 &#x9009;&#x62E9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7C7B;&#x578B; </div></p>
+<p></p>
+
+
+<p>&#x2003;&#x2003;&#x4EE5;&#x4E0A;&#x4FE1;&#x606F;&#x586B;&#x5199;&#x5B8C;&#x540E;,&#x70B9;&#x51FB;<code>Finish</code>, &#x5B8C;&#x6210;QtCreator&#x5DE5;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x3002;</p>
+<p><img src="imagech/5_2_9.png" alt="png"></p>
+<p><div align="center"> &#x56FE;5-2-9 &#x5B8C;&#x6210;&#x5DE5;&#x7A0B;&#x521B;&#x5EFA; </div></p>
+<p></p>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter5-1.html" class="navigation navigation-prev " aria-label="Previous page: 5.1 安装QtCreator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter5-3.html" class="navigation navigation-next " aria-label="Next page: 5.3 编译运行QT应用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.2 配置QtCreator","level":"1.6.2","depth":2,"next":{"title":"5.3 编译运行QT应用","level":"1.6.3","depth":2,"path":"Chapter5-3.md","ref":"Chapter5-3.md","articles":[]},"previous":{"title":"5.1 安装QtCreator","level":"1.6.1","depth":2,"path":"Chapter5-1.md","ref":"Chapter5-1.md","articles":[]},"dir":"ltr"},"config":{"tbfed-pagefooter":{"copyright":"Copyright@MYIR Tech Limited 2011-2017 all rights reserved.","modify_label":"���ļ��޶�ʱ�䣺","modify_format":"YYYY-MM-DD HH:mm:ss"},"plugins":["theme-pdftoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-pdftoc":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Sunny.Guo","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MYD-AM335X-Linux4.1.18-Development-Guide","language":"zh-hans","links":{"sidebar":{"MYiR Technology Ltd.":"http://www.myir-tech.com"}},"gitbook":"3.x.x"},"file":{"path":"Chapter5-2.md","mtime":"2018-07-03T02:04:54.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-18T09:48:11.973Z"},"basePath":".","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,926 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3 Build Filesystem · MYD-AM335X-Linux4.1.18-Development-Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sunny.Guo">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter3-4.html" />
+    
+    
+    <link rel="prev" href="Chapter3-2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.myir-tech.com" target="_blank" class="custom-link">MYiR Technology Ltd.</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+            
+        
+
+        
+
+        
+            
+    
+        
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="Chapter1.html">
+            
+                <a href="Chapter1.html">
+            
+                    
+                    1. Software Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="Chapter2.html">
+            
+                <a href="Chapter2.html">
+            
+                    
+                    2. Deploy development environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.3.1" data-path="Chapter2-1.html">
+            
+                <a href="Chapter2-1.html">
+            
+                    
+                    2.1 Install tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3.2" data-path="Chapter2-2.html">
+            
+                <a href="Chapter2-2.html">
+            
+                    
+                    2.2 Setup GCC Toolchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    3. Bulid System
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="Chapter3-1.html">
+            
+                <a href="Chapter3-1.html">
+            
+                    
+                    3.1 Bulid Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="Chapter3-2.html">
+            
+                <a href="Chapter3-2.html">
+            
+                    
+                    3.2 Build Linux Kernel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.4.3" data-path="Chapter3-3.html">
+            
+                <a href="Chapter3-3.html">
+            
+                    
+                    3.3 Build Filesystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="Chapter3-4.html">
+            
+                <a href="Chapter3-4.html">
+            
+                    
+                    3.4 Build QT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="Chapter4.html">
+            
+                <a href="Chapter4.html">
+            
+                    
+                    4. Linux Applications Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="Chapter4-1.html">
+            
+                <a href="Chapter4-1.html">
+            
+                    
+                    4.1 LCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="Chapter4-2.html">
+            
+                <a href="Chapter4-2.html">
+            
+                    
+                    4.2 Touch Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="Chapter4-3.html">
+            
+                <a href="Chapter4-3.html">
+            
+                    
+                    4.3 RTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="Chapter4-4.html">
+            
+                <a href="Chapter4-4.html">
+            
+                    
+                    4.4 RS485
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="Chapter4-5.html">
+            
+                <a href="Chapter4-5.html">
+            
+                    
+                    4.5 CAN Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="Chapter4-6.html">
+            
+                <a href="Chapter4-6.html">
+            
+                    
+                    4.6 Ethernet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="Chapter4-7.html">
+            
+                <a href="Chapter4-7.html">
+            
+                    
+                    4.7 NAND Flash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.8" data-path="Chapter4-8.html">
+            
+                <a href="Chapter4-8.html">
+            
+                    
+                    4.8 KeyPad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.9" data-path="Chapter4-9.html">
+            
+                <a href="Chapter4-9.html">
+            
+                    
+                    4.9 GPIO-LED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.10" data-path="Chapter4-10.html">
+            
+                <a href="Chapter4-10.html">
+            
+                    
+                    4.10 Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.11" data-path="Chapter4-11.html">
+            
+                <a href="Chapter4-11.html">
+            
+                    
+                    4.11 USB Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.12" data-path="Chapter4-12.html">
+            
+                <a href="Chapter4-12.html">
+            
+                    
+                    4.12 USB Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="Chapter5.html">
+            
+                <a href="Chapter5.html">
+            
+                    
+                    5. Qt Applications Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.6.1" data-path="Chapter5-1.html">
+            
+                <a href="Chapter5-1.html">
+            
+                    
+                    5.1 Install QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.2" data-path="Chapter5-2.html">
+            
+                <a href="Chapter5-2.html">
+            
+                    
+                    5.2 Config QtCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6.3" data-path="Chapter5-3.html">
+            
+                <a href="Chapter5-3.html">
+            
+                    
+                    5.3 Build QT Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="Chapter6.html">
+            
+                <a href="Chapter6.html">
+            
+                    
+                    6. Update System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="Chapter7.html">
+            
+                <a href="Chapter7.html">
+            
+                    
+                    7. Peripheral Module Use
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.8.1" data-path="Chapter7-1.html">
+            
+                <a href="Chapter7-1.html">
+            
+                    
+                    7.1 4.3-Inch Resistive Touch Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.2" data-path="Chapter7-2.html">
+            
+                <a href="Chapter7-2.html">
+            
+                    
+                    7.2 WIFI Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.3" data-path="Chapter7-3.html">
+            
+                <a href="Chapter7-3.html">
+            
+                    
+                    7.3 USB Camera Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.4" data-path="Chapter7-4.html">
+            
+                <a href="Chapter7-4.html">
+            
+                    
+                    7.4 GPS Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8.5" data-path="Chapter7-5.html">
+            
+                <a href="Chapter7-5.html">
+            
+                    
+                    7.5 GPRS Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="appendix.html">
+            
+                <a href="appendix.html">
+            
+                    
+                    Appendix Warranty & Technical Support Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+        
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.3 Build Filesystem</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="33-build-filesystem">3.3 Build Filesystem</h2>
+<p>This section covers the building of filesystem with Buildroot.</p>
+<h2 id="331-preparation-before-building-buildroot">3.3.1 Preparation before Building Buildroot</h2>
+<blockquote>
+<p>Note1: After modifying source code of Kernel or U-boot, Buildroot can not update and build it automatically. Customers should commit it to the master branch of their local git repo manually. </p>
+<p>Note2: If the source code of Kernel is updated, before building Buildroot again, customers should remove the package &quot;myir-buildroot/dl/linux-master.tar.gz&quot; and the &quot;myir-buildroot/output/build/linux-master&quot; and &quot;myirbuildroot\output\build\linux-headers-master&quot; directories manually. The same to rebuilding of U-boot.</p>
+<p>Note3&#xFF1A;Before building u-boot and kernel with buildroot, users need to create their own git repository for u-boot and kernel, then replace the git path in the configuration files.</p>
+</blockquote>
+<p>Copy the Buildroot source package customized by MYIR Tech from <em>04-Linux_Source/Filesystem/myir-buildroot.tar.gz</em> of our release package to work directory and uncompress it. The content of myir-buildroot.tar.gz is shown below:</p>
+<pre><code>$ ls -al &lt;WORKDIR&gt;/Filesystem/myir-buildroot
+arch   CHANGES           configs     dl    linux            output   support
+board  Config.in         COPYING     docs  Makefile         package  system
+boot   Config.in.legacy  DEVELOPERS  fs    Makefile.legacy  README   toolchain
+</code></pre><p>For more details about the file structure of <code>Buildroot</code>, please refer to Buildroot manual <a href="https://buildroot.org/downloads/manual/manual.html" target="_blank">https://buildroot.org/downloads/manual/manual.html</a>.The board support files for <code>MYD AM335X</code> series development boards are located at <code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/board/myir/myd_c335x</code>,<code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/board/myir/myd_y335x</code>,<code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/board/myir/myd_j335x</code></p>
+<h2 id="332-buildroot-configuration">3.3.2 Buildroot Configuration</h2>
+<p>The configuration files for Buildroot are all located at <code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/configs/</code>.   </p>
+<div align="center"> Table 3-3-1 Buildroot Config Files for MYIR Development Boards</div>
+
+
+<table>
+<thead>
+<tr>
+<th>Config File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>myd_c335x_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X CPU Module with NAND Flash</td>
+</tr>
+<tr>
+<td>myd_c335x_emmc_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X CPU Module With EMMC</td>
+</tr>
+<tr>
+<td>myd_c335x_qt5_defconfig</td>
+<td>Buildroot configuration with QT5 for MYD-AM335X development board with NAND</td>
+</tr>
+<tr>
+<td>myd_j335x_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X-J CPU Module with NAND Flash</td>
+</tr>
+<tr>
+<td>myd_j335x_emmc_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X-J CPU Module with EMMC</td>
+</tr>
+<tr>
+<td>myd_j335x_qt5_defconfig</td>
+<td>Buildroot configuration with QT5 for MYD-AM335X-J development board with NAND Flash</td>
+</tr>
+<tr>
+<td>myd_y335x_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X-Y CPU Module with NAND Flash</td>
+</tr>
+<tr>
+<td>myd_y335x_defconfig</td>
+<td>Buildroot configuration without QT5 for MYC-AM335X-Y CPU Module with EMMC</td>
+</tr>
+<tr>
+<td>myd_y335x_qt5_defconfig</td>
+<td>Buildroot configuration with QT5 for MYD-AM335X-Y development board with NAND Flash</td>
+</tr>
+</tbody>
+</table>
+<pre><code>$ cd myir-buildroot
+$ make clean
+$ make myd_y335x_defconfig
+</code></pre><p>Customers can change the configuration by its kernel-like menuconfig with the command <code>make menuconfig</code>. The main configuration for <code>MYD-AM335X-Y</code> development board are listed below.</p>
+<h4 id="configuration-for-cross-compiler">Configuration for Cross Compiler:</h4>
+<p>Buildroot can use internal cross compile toolchain generated by Buildroot itself, it can also use external cross compile toolchain. In this document, we choose the internal cross compile toochain, it will be generated and stored to <code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/host/usr/bin/</code> after compiling.</p>
+<p><img src="imageen/C3_3_buildroot_make_menuconfig_toolchain.png" alt="C3_3_buildroot_make_menuconfig_toolchain"></p>
+<p><div align="center"> Figure 3-3-1 Configuration for Cross Compiler </div></p>
+<p></p>
+
+
+<h4 id="configuration-for-system">Configuration for System:</h4>
+<p>The configuration for system includes the name of the target system, the welcome message, the init subsystem(busybox/systemV/systemd) and device manage system,
+customers can also set the password for root user by configuration. For MYD-AM335X-Y development board, the password for root is set to <code>myirtech</code> as shown below.
+If customers do not need to set password, they no need to config the password.</p>
+<p><img src="imageen/C3_3_buildroot_make_menuconfig_system_configuration.png" alt="C3_3_buildroot_make_menuconfig_system_configuration"></p>
+<p><div align="center"> Figure 3-3-2 Configuration for System </div></p>
+<p></p>
+
+
+<h4 id="configuration-for-bootloader">Configuration for Bootloader:</h4>
+<p>The configuration for Bootloader includes the URL of the source code of U-boot, the U-boot configuration file name, the output images of U-boot and so on. They are shown in Figure 3-3-3 below.</p>
+<p><img src="imageen/C3_3_buildroot_make_menuconfig_bootloader.png" alt="C3_3_buildroot_make_menuconfig_bootloader"></p>
+<p><div align="center"> Figure 3-3-3 Configuration for Bootloader </div></p>
+<p></p>
+
+
+<p>We fetch the source code of U-boot with git from local repository. Users need to build their own git repository, they can also use other protocols or even local directory. For other protocols, please refer to the Buildroot manual.
+Create a U-boot git repository from <code>myir-u-boot.tar.gz</code>:</p>
+<pre><code>$ cd ~/
+$ tar zxvf myir-u-boot.tar.gz
+$ cd myir-u-boot
+$ git init
+$ git add . -f
+$ git commit -m &quot;Initial Version&quot; -a
+</code></pre><p>And then modify and replace the two items of the configuration files located at <code>&lt;WORKDIR&gt;/Filesystem/buildroot/configs/myd_y335x_defconfig</code> and <code>&lt;WORKDIR&gt;/Filesystem/buildroot/configs/myd_y335x_qt5_defconfig</code>, as shown below:</p>
+<pre><code>BR2_TARGET_UBOOT_CUSTOM_REPO_URL=&quot;~/myir-u-boot/.git&quot;
+BR2_TARGET_UBOOT_CUSTOM_REPO_VERSION=&quot;master&quot;
+</code></pre><h4 id="configuration-for-kernel">Configuration for Kernel:</h4>
+<p>The configuration of Kernel is similar to that of bootloader.</p>
+<p><img src="imageen/C3_3_buildroot_make_menuconfig_kernel.png" alt="C3_3_buildroot_make_menuconfig_kernnel"></p>
+<p><div align="center"> Figure 3-3-4 Configuration for Kernel </div></p>
+<p></p>
+
+
+<p>We fetch the source code of Kernel with git from local repository. Users need to build their own git repository, they can also use other protocols or even local directory. For other protocols, please refer to the Buildroot manual.
+Create a kernel git repository from <code>myir-kernel.tar.gz</code>:</p>
+<pre><code>$ cd ~/
+$ tar zxvf myir-kernel.tar.gz
+$ cd myir-u-boot
+$ git init
+$ git add . -f
+$ git commit -m &quot;Initial Version&quot; -a
+</code></pre><p>And then modify and replace the two items of the configuration files located at <code>&lt;WORKDIR&gt;/Filesystem/buildroot/configs/myd_y335x_defconfig</code> and <code>&lt;WORKDIR&gt;/Filesystem/buildroot/configs/myd_y335x_qt5_defconfig</code>, as shown below:</p>
+<pre><code>BR2_TARGET_KERNEL_CUSTOM_REPO_URL=&quot;~/myir-kernel/.git&quot;
+BR2_TARGET_KERNEL_CUSTOM_REPO_VERSION=&quot;master&quot;
+</code></pre><h4 id="configuration-for-filesystem">Configuration for Filesystem:</h4>
+<p>The configuration for filesystem determines what filesystem images are generated in <em>myir-buildroot/output/images/</em> directory after compiling, If we choose <code>ramdisk</code> in the configuration, we will get a ramdisk filesystem image. EXT2/4, UBIFS, and rootfs tar package can also be create if they are choosed in configuration.</p>
+<p>By the way, the rootfs.tar.gz can be uncompressed and used as the nfsroot directory, it can also be made to other formats of filesystem images by host mtd-utils.
+For example, we can create UBIFS filesystem image without building Buildroot again after doing some modification for rootfs.Firstly, we create a file <code>ubinize.cfg</code> as shown below:</p>
+<pre><code>[ubifs]
+mode=ubi
+vol_id=0
+vol_type=dynamic
+vol_name=rootfs
+vol_alignment=1
+vol_flags=autoresize
+image=rootfs.ubifs
+</code></pre><p>Then, make a UBIFS image with UBIFS tools by the following processes:</p>
+<pre><code>$ export PATH=$PATH:&lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/host/usr/sbin
+$ tar zxvf rootfs.tar.gz
+$ mkfs.ubifs -d rootfs -e 0x1f000 -c 2048 -m 0x800 -x lzo -F -o  rootfs.ubifs
+$ ubinize -o rootfs.ubi -m 0x800 -p 0x20000 -s 512 -m 2048 -O 2048 ubinize.cfg
+</code></pre><p><img src="imageen/C3_3_buildroot_make_menuconfig_filesystem.png" alt="C3_3_buildroot_make_menuconfig_filesystem"></p>
+<p><div align="center"> Figure 3-3-5 Configuration for Filesystem </div></p>
+<p></p>
+
+
+
+<h4 id="configuration-for-target-packages">Configuration for Target Packages:</h4>
+<p>The configuration for target packages is easier, but it is changed more frequently. Customers can choose some hardware tools, such as I2C-tools, spi-tools, can-utils and so on, build them into
+the filesystem images for debugging. Some network utils, such as DHCP, TFTP, SSH and so on, can aslo be choosed and built into the filesystem images for production.
+Most commonly used tools are included in the target packages of Buildroot. Customers can also write new target packages and integrate them to Buildroot, please refer to <a href="https://buildroot.org/downloads/manual/manual.html#adding-packages" target="_blank">https://buildroot.org/downloads/manual/manual.html#adding-packages</a> for details.</p>
+<p><img src="imageen/C3_3_buildroot_make_menuconfig_target_packages.png" alt="C3_3_buildroot_make_menuconfig_target_packages"></p>
+<p><div align="center"> Figure 3-3-6 Configuration for Target Packages </div></p>
+<p></p>
+
+
+<h2 id="333-build-buildroot">3.3.3 Build Buildroot</h2>
+<p>Customers can build Buildroot just like building kernel as shown below:</p>
+<pre><code>$ cd myir-buildroot
+$ make
+</code></pre><p>  An output directory is generated during compilation&#xFF0C;The resulte output image files are located at the <code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/images</code>directory.</p>
+<pre><code>$ls -al output/images
+boot.vfat  MLO_usbmsc          rootfs.cpio        rootfs.tar     u-boot_emmc.img  u-boot_usbmsc.img    uEnv.txt
+MLO        myd_y335x.dtb       rootfs.cpio.gz     rootfs.tar.gz  u-boot.img       uEnv_mmc.txt         uEnv_usbmsc_ramdisk.txt
+MLO_emmc   myd_y335x_emmc.dtb  rootfs.cpio.uboot  rootfs.ubi     u-boot_nand.img  uEnv_ramdisk.txt     uEnv_usbmsc.txt
+MLO_nand   ramdisk.gz          rootfs.ext2        rootfs.ubifs   u-boot_sd.img    uEnv_sd_ramdisk.txt  zImage
+MLO_sd     readme.txt          rootfs.ext4        sdcard.img     u-boot-spl.bin   uEnv_sd.txt
+</code></pre><p>The bootloader, kernel and all kinds of filesystem images are generated all in one step, they will be introduced in the subsequent section. 
+A cross compile toolchain is also generated at <code>&lt;WORKDIR&gt;/Filesystem/myir-buildroot/output/</code>, users can setup this toolchain as follows(suppose myir-buildroot is put into $HOME):</p>
+<pre><code>export  PATH=&quot;$HOME/myir-buildroot/output/host/usr/bin:$PATH&quot;  
+export  PATH=&quot;$HOME/myir-buildroot/output/host/usr/sbin:$PATH&quot;
+export  CROSS_COMPILE=arm-myir-linux-gnueabihf-
+export  TARGET_CC=arm-myir-linux-gnueabihf-gcc
+export  ARCH=arm
+</code></pre><h3 id="334-filesystem-built-by-arago">3.3.4 Filesystem Built by Arago</h3>
+<p>Customers can also run an demo filesystem image created with Arago on a MYD-AM335X series development board, it was created by TI, please refer to the WIKI page on TI&apos;s website.
+<a href="http://processors.wiki.ti.com/index.php/Processor_SDK_Building_The_SDK" target="_blank">http://processors.wiki.ti.com/index.php/Processor_SDK_Building_The_SDK</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter3-2.html" class="navigation navigation-prev " aria-label="Previous page: 3.2 Build Linux Kernel">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter3-4.html" class="navigation navigation-next " aria-label="Next page: 3.4 Build QT">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3 Build Filesystem","level":"1.4.3","depth":2,"next":{"title":"3.4 Build QT","level":"1.4.4","depth":2,"path":"Chapter3-4.md","ref":"Chapter3-4.md","articles":[]},"previous":{"title":"3.2 Build Linux Kernel","level":"1.4.2","depth":2,"path":"Chapter3-2.md","ref":"Chapter3-2.md","articles":[]},"dir":"ltr"},"config":{"tbfed-pagefooter":{"copyright":"Copyright@MYIR Tech Limited 2011-2017 all rights reserved.","modify_label":"���ļ��޶�ʱ�䣺","modify_format":"YYYY-MM-DD HH:mm:ss"},"plugins":["theme-pdftoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-pdftoc":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Sunny.Guo","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MYD-AM335X-Linux4.1.18-Development-Guide","language":"en","links":{"sidebar":{"MYiR Technology Ltd.":"http://www.myir-tech.com"}},"gitbook":"3.x.x"},"file":{"path":"Chapter3-3.md","mtime":"2018-07-30T01:21:53.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-18T09:48:11.973Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
